@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quản lý phim · Kha Đạt Cinema</title><link rel="stylesheet" href="/assets/css/common.css"><link rel="stylesheet" href="/assets/css/movies.css"><link rel="stylesheet" href="/assets/css/admin.css"><script defer src="/assets/js/api.js"></script><script defer src="/assets/js/movies-api.js"></script><script defer src="/assets/js/auth.js"></script><script defer src="/assets/js/ui.js"></script><script defer src="/assets/js/layout.js"></script><script defer src="/assets/js/movies.js"></script></head>
+<body>
+<a class="skip-link" href="#content">Bỏ qua điều hướng</a>
+<header class="topbar"><a class="brand" href="/admin/dashboard.html"><span class="brand-mark" aria-hidden="true">KD</span> Kha Đạt <span class="brand-sub">CINEMA</span></a><div class="account"><span id="account">Đang kiểm tra phiên…</span><button id="logout" class="button quiet" type="button" disabled>Đăng xuất</button></div></header>
+<main id="content" tabindex="-1">
+<div class="heading"><div><p class="eyebrow">QUẢN TRỊ RẠP CHIẾU PHIM</p><h1>Quản lý phim</h1><p class="muted">Quản lý thông tin, thể loại và trạng thái phát hành của phim.</p></div><button id="add" class="button primary" disabled><span aria-hidden="true">＋</span> Thêm phim</button></div>
+<div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+<section class="panel" aria-labelledby="catalog-heading">
+<div class="panel-title"><h2 id="catalog-heading">Danh mục phim</h2><button id="reload" class="button" disabled>Tải lại</button></div>
+<form id="filters" class="filters" role="search">
+<label class="search">Tìm phim<input id="query" type="search" maxlength="200" placeholder="Nhập mã hoặc tên phim…" autocomplete="off"></label>
+<label>Trạng thái<select id="status-filter"><option value="">Tất cả trạng thái</option><option value="ACTIVE">Đang sử dụng</option><option value="INACTIVE">Ngừng sử dụng</option></select></label>
+<label>Thể loại<select id="genre-filter"><option value="">Tất cả thể loại</option></select></label>
+<label>Sắp xếp<select id="sort"><option value="id:desc">Mới thêm trước</option><option value="title:asc">Tên A → Z</option><option value="code:asc">Mã A → Z</option><option value="durationMinutes:asc">Thời lượng tăng dần</option></select></label>
+<button class="button" type="submit">Tìm kiếm</button><button class="button quiet" id="reset-filters" type="button">Đặt lại</button>
+</form>
+<div id="list-state" class="state" role="status" aria-live="polite">Đang tải danh sách phim…</div>
+<div id="table-region" hidden aria-busy="false"><table><caption class="sr-only">Danh sách phim theo bộ lọc hiện tại</caption><thead><tr><th scope="col">Phim</th><th scope="col">Thể loại</th><th scope="col">Thời lượng / Tuổi</th><th scope="col">Trạng thái</th><th scope="col">Thao tác</th></tr></thead><tbody id="rows"></tbody></table></div>
+<footer class="pagination"><p id="count" aria-live="polite">Chưa tải dữ liệu</p><label>Số dòng<select id="size"><option>10</option><option selected>20</option><option>50</option><option>100</option></select></label><nav aria-label="Phân trang danh sách phim"><button id="prev" class="button" disabled aria-label="Trang trước">←</button><span id="page">Trang 0 / 0</span><button id="next" class="button" disabled aria-label="Trang sau">→</button></nav></footer>
+</section><p class="footnote">Thông tin được đồng bộ với hệ thống rạp. Phim có lịch sử suất chiếu được bảo vệ khỏi thao tác xóa.</p>
+</main>
+<dialog id="editor" aria-labelledby="editor-title"><form id="movie-form" novalidate>
+<header class="dialog-head"><div><p class="eyebrow">THÔNG TIN PHIM</p><h2 id="editor-title">Thêm phim</h2></div><button class="icon-button" type="button" data-close="editor" aria-label="Đóng biểu mẫu">✕</button></header>
+<div class="dialog-body"><p class="muted">Các trường có dấu * là bắt buộc. Thay đổi chỉ được lưu khi bấm Lưu phim.</p><div id="form-error" class="error-summary" role="alert" tabindex="-1" hidden></div>
+<div class="form-grid">
+<label>Mã phim *<input name="code" id="movie-code" maxlength="32" required aria-describedby="hint-code error-code" autocomplete="off"><small id="hint-code">Chữ, số, dấu chấm, gạch dưới hoặc gạch ngang; tối đa 32 ký tự.</small><span class="field-error" id="error-code"></span></label>
+<label>Tên phim *<input name="title" maxlength="200" required aria-describedby="error-title"><span class="field-error" id="error-title"></span></label>
+<label>Thời lượng (phút) *<input name="durationMinutes" type="number" min="1" max="65535" step="1" required inputmode="numeric" aria-describedby="error-durationMinutes"><span class="field-error" id="error-durationMinutes"></span></label>
+<label>Tuổi tối thiểu *<input name="minimumAge" type="number" min="0" max="18" step="1" required inputmode="numeric" aria-describedby="hint-age error-minimumAge"><small id="hint-age">Giá trị nội bộ từ 0–18, không phải nhãn phân loại pháp lý.</small><span class="field-error" id="error-minimumAge"></span></label>
+<label>Trạng thái *<select name="status" required aria-describedby="error-status"><option value="ACTIVE">Đang sử dụng</option><option value="INACTIVE">Ngừng sử dụng</option></select><span class="field-error" id="error-status"></span></label>
+<label>Đường dẫn poster<input name="posterUrl" type="url" maxlength="2048" placeholder="https://…" aria-describedby="error-posterUrl"><span class="field-error" id="error-posterUrl"></span></label>
+<label class="wide">Đường dẫn trailer<input name="trailerUrl" type="url" maxlength="2048" placeholder="https://…" aria-describedby="error-trailerUrl"><span class="field-error" id="error-trailerUrl"></span></label>
+<fieldset class="wide"><legend>Thể loại * <span class="muted">— chọn từ 1 đến 100</span></legend><div id="genre-choices" class="genre-choices"></div><span class="field-error" id="error-genreIds"></span></fieldset>
+<label class="wide">Mô tả<textarea name="description" rows="4" aria-describedby="hint-description error-description"></textarea><small id="hint-description">Tối đa 65.535 byte UTF-8.</small><span class="field-error" id="error-description"></span></label>
+</div></div><footer class="dialog-foot"><button class="button" type="button" data-close="editor">Hủy</button><button id="save" class="button primary" type="submit">Lưu phim</button></footer>
+</form></dialog>
+<dialog id="delete-dialog" class="compact" aria-labelledby="delete-title"><form id="delete-form"><div class="dialog-body"><p class="eyebrow danger-text">XÁC NHẬN XÓA</p><h2 id="delete-title">Xóa phim?</h2><p id="delete-description"></p><p class="muted">Thao tác này không thể hoàn tác. Phim đã có suất chiếu sẽ không được xóa.</p><div id="delete-error" class="error-summary" role="alert" tabindex="-1" hidden></div></div><footer class="dialog-foot"><button id="delete-cancel" class="button" type="button" data-close="delete-dialog" autofocus>Giữ lại</button><button id="delete-confirm" class="button danger" type="submit">Xóa phim</button></footer></form></dialog>
+</body></html>

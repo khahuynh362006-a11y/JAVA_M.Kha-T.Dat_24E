@@ -1,0 +1,67 @@
+{
+  "checks": [
+    {
+      "name": "Lost response keeps original idempotency key",
+      "passed": true
+    },
+    {
+      "name": "Retry uses same key and returns original booking",
+      "passed": true
+    },
+    {
+      "name": "No duplicate booking after replay",
+      "passed": true
+    },
+    {
+      "name": "Price rejection closes stale review and requires new age confirmation",
+      "passed": true
+    },
+    {
+      "name": "Dialog Tab wraps",
+      "passed": true
+    },
+    {
+      "name": "Dialog reverse Tab wraps",
+      "passed": true
+    },
+    {
+      "name": "Dialog restores trigger focus",
+      "passed": true
+    },
+    {
+      "name": "Empty results distinguished from failure",
+      "passed": true
+    },
+    {
+      "name": "Network failure is not an empty list",
+      "passed": true
+    },
+    {
+      "name": "Statistics rejects range over 31 days",
+      "passed": true
+    },
+    {
+      "name": "Occupancy preserves null and values above 100%",
+      "passed": true
+    },
+    {
+      "name": "Mobile menu moves focus to navigation",
+      "passed": true
+    },
+    {
+      "name": "Mobile menu closes with Escape",
+      "passed": true
+    },
+    {
+      "name": "Session expiry redirects to login",
+      "passed": true
+    },
+    {
+      "name": "No JavaScript errors",
+      "passed": true
+    }
+  ],
+  "startedAt": "2026-10-28T06:14:50.182Z",
+  "javascriptErrors": [],
+  "finishedAt": "2026-10-28T06:14:52.539Z"
+}

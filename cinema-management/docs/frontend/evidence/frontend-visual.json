@@ -1,0 +1,161 @@
+{
+  "checks": [
+    {
+      "page": "dashboard",
+      "width": 1366,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "genres",
+      "width": 1366,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "movies",
+      "width": 1366,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "rooms",
+      "width": 1366,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "seats",
+      "width": 1366,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "showtimes",
+      "width": 1366,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "bookings",
+      "width": 1366,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "statistics",
+      "width": 1366,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "users",
+      "width": 1366,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "dashboard",
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "genres",
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "movies",
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "rooms",
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "seats",
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "showtimes",
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "bookings",
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "statistics",
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "users",
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "dashboard",
+      "width": 360,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "genres",
+      "width": 360,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "movies",
+      "width": 360,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "rooms",
+      "width": 360,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "seats",
+      "width": 360,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "showtimes",
+      "width": 360,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "bookings",
+      "width": 360,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "statistics",
+      "width": 360,
+      "noHorizontalOverflow": true
+    },
+    {
+      "page": "users",
+      "width": 360,
+      "noHorizontalOverflow": true
+    }
+  ],
+  "screenshots": [
+    "dashboard-1366.png",
+    "genres-1366.png",
+    "movies-1366.png",
+    "rooms-1366.png",
+    "seats-1366.png",
+    "showtimes-1366.png",
+    "bookings-1366.png",
+    "statistics-1366.png",
+    "users-1366.png",
+    "dashboard-360.png",
+    "genres-360.png",
+    "movies-360.png",
+    "rooms-360.png",
+    "seats-360.png",
+    "showtimes-360.png",
+    "bookings-360.png",
+    "statistics-360.png",
+    "users-360.png"
+  ],
+  "javascriptErrors": [],
+  "finishedAt": "2026-10-28T06:15:08.625Z"
+}

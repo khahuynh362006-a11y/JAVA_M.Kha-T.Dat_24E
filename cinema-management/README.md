@@ -1,4 +1,10 @@
-# Cinema Management — backend và lịch chiếu
+# Cinema Management — hệ thống quản lý rạp chiếu phim
+
+## Frontend của Đạt cập nhật ngày 28/10/2026
+
+Mở `http://127.0.0.1:8080/` hoặc `/login.html` sau khi backend khởi động. Đã có giao diện dùng API thật cho ADMIN/STAFF: danh mục, phòng/ghế, lịch, đặt/tra cứu/hủy và thống kê. Quản lý tài khoản chờ API của Kha. Xem [hướng dẫn frontend](docs/frontend/HUONG_DAN.md), [báo cáo và hạn chế](docs/frontend/BAO_CAO.md), [tệp thay đổi](docs/frontend/THAY_DOI.md). Bàn giao frontend trên frontend/dat và main theo yêu cầu của Đạt.
+
+Các ghi chú “frontend trống/chưa kiểm chứng” trong lịch sử bàn giao backend bên dưới mô tả thời điểm bàn giao cũ. Bằng chứng frontend hiện tại ở `docs/frontend/evidence/`; không thay thế bằng chứng backend, nghiệm thu HTTPS hoặc thiết bị vật lý.
 
 Backend cho một rạp có nhiều phòng, package `com.khadat.cinema`. Đã có mapping schema, xử lý request/lỗi, health, đăng nhập cookie BCrypt/CSRF và phân quyền ADMIN/STAFF. Đã có CRUD thể loại/phim, phòng, ghế vật lý và quản lý lịch chiếu; đã có đặt/hủy tại quầy theo mục14. Frontend HTML/CSS/JavaScript của Đạt chưa được sửa.
 

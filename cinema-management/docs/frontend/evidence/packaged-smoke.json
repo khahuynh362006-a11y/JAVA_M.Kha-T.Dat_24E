@@ -1,0 +1,57 @@
+{
+  "startedAt": "2026-10-28T06:21:21.122Z",
+  "baseUrl": "http://127.0.0.1:8080",
+  "checks": [
+    {
+      "name": "ADMIN login and dashboard",
+      "passed": true
+    },
+    {
+      "name": "Page loads: genres",
+      "passed": true
+    },
+    {
+      "name": "Page loads: movies",
+      "passed": true
+    },
+    {
+      "name": "Page loads: rooms",
+      "passed": true
+    },
+    {
+      "name": "Page loads: seats",
+      "passed": true
+    },
+    {
+      "name": "Page loads: showtimes",
+      "passed": true
+    },
+    {
+      "name": "Page loads: bookings",
+      "passed": true
+    },
+    {
+      "name": "Page loads: statistics",
+      "passed": true
+    },
+    {
+      "name": "Page loads: users",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 1366",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 768",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 360",
+      "passed": true
+    }
+  ],
+  "fixtures": {},
+  "javascriptErrors": [],
+  "finishedAt": "2026-10-28T06:21:29.510Z"
+}

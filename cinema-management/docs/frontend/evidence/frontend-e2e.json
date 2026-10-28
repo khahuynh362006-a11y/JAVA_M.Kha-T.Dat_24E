@@ -1,0 +1,168 @@
+{
+  "startedAt": "2026-10-28T06:09:59.843Z",
+  "baseUrl": "http://127.0.0.1:8080",
+  "checks": [
+    {
+      "name": "ADMIN login and dashboard",
+      "passed": true
+    },
+    {
+      "name": "Page loads: genres",
+      "passed": true
+    },
+    {
+      "name": "Page loads: movies",
+      "passed": true
+    },
+    {
+      "name": "Page loads: rooms",
+      "passed": true
+    },
+    {
+      "name": "Page loads: seats",
+      "passed": true
+    },
+    {
+      "name": "Page loads: showtimes",
+      "passed": true
+    },
+    {
+      "name": "Page loads: bookings",
+      "passed": true
+    },
+    {
+      "name": "Page loads: statistics",
+      "passed": true
+    },
+    {
+      "name": "Page loads: users",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 1366",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 768",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 360",
+      "passed": true
+    },
+    {
+      "name": "Genre create persists",
+      "passed": true
+    },
+    {
+      "name": "Genre update persists",
+      "passed": true
+    },
+    {
+      "name": "Movie empty validation",
+      "passed": true
+    },
+    {
+      "name": "Movie create persists",
+      "passed": true
+    },
+    {
+      "name": "Room create persists",
+      "passed": true
+    },
+    {
+      "name": "Bulk seat layout persists",
+      "passed": true
+    },
+    {
+      "name": "Seat type update persists",
+      "passed": true
+    },
+    {
+      "name": "Showtime create and server end time",
+      "passed": true
+    },
+    {
+      "name": "Showtime conflict preserves form",
+      "passed": true
+    },
+    {
+      "name": "Booking created with real server prices",
+      "passed": true
+    },
+    {
+      "name": "Booking survives reload",
+      "passed": true
+    },
+    {
+      "name": "ADMIN cancellation persists",
+      "passed": true
+    },
+    {
+      "name": "Cancellation releases seats",
+      "passed": true
+    },
+    {
+      "name": "Statistics report: showtimes",
+      "passed": true
+    },
+    {
+      "name": "Statistics report: booked-seats",
+      "passed": true
+    },
+    {
+      "name": "Statistics report: occupancy",
+      "passed": true
+    },
+    {
+      "name": "Statistics report: cancellations",
+      "passed": true
+    },
+    {
+      "name": "Account API limitation captured",
+      "passed": true
+    },
+    {
+      "name": "ADMIN logout",
+      "passed": true
+    },
+    {
+      "name": "STAFF role navigation",
+      "passed": true
+    },
+    {
+      "name": "STAFF can book",
+      "passed": true
+    },
+    {
+      "name": "STAFF cancellation control absent",
+      "passed": true
+    },
+    {
+      "name": "No browser JavaScript errors",
+      "passed": true
+    }
+  ],
+  "fixtures": {
+    "genreId": 7,
+    "movieId": 7,
+    "roomId": 6,
+    "date": "2026-11-11",
+    "showtimeId": 6,
+    "bookingId": 2,
+    "bookingCode": "BK-783696E9DBD94CD7A68C7F2C7A34DE30"
+  },
+  "javascriptErrors": [],
+  "accountApi": {
+    "status": 404,
+    "body": {
+      "timestamp": "2026-10-28T13:10:13.9060483+07:00",
+      "status": 404,
+      "code": "RESOURCE_NOT_FOUND",
+      "message": "Không tìm thấy tài nguyên.",
+      "path": "/api/admin/users",
+      "fieldErrors": {}
+    }
+  },
+  "finishedAt": "2026-10-28T06:10:15.639Z"
+}

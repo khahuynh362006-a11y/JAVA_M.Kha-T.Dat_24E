@@ -1,0 +1,2 @@
+/* Movie-specific styles. Shared components live in common.css. */
+.movie-code { text-transform: uppercase; }

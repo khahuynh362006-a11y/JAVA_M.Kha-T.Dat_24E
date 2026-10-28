@@ -1,0 +1,54 @@
+{
+  "startedAt": "2026-10-28T06:13:45.109Z",
+  "checks": [
+    {
+      "name": "Untrusted movie title rendered as text",
+      "passed": true
+    },
+    {
+      "name": "Movie full PUT preserves genres",
+      "passed": true
+    },
+    {
+      "name": "Genre in use deletion blocked",
+      "passed": true
+    },
+    {
+      "name": "Movie delete without history",
+      "passed": true
+    },
+    {
+      "name": "Genre delete without links",
+      "passed": true
+    },
+    {
+      "name": "Room update persists",
+      "passed": true
+    },
+    {
+      "name": "Single seat add/delete",
+      "passed": true
+    },
+    {
+      "name": "Empty room delete",
+      "passed": true
+    },
+    {
+      "name": "Showtime update persists",
+      "passed": true
+    },
+    {
+      "name": "Showtime cancellation persists",
+      "passed": true
+    },
+    {
+      "name": "Showtime deletion before booking",
+      "passed": true
+    }
+  ],
+  "fixtures": {
+    "roomId": 7,
+    "date": "2026-11-13"
+  },
+  "finishedAt": "2026-10-28T06:13:53.125Z"
+}
