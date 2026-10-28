@@ -1,0 +1,124 @@
+{
+  "fixture" : {
+    "movieA" : 51,
+    "movieB" : 52,
+    "snapshotShow" : 47,
+    "room1" : 51,
+    "room2" : 52,
+    "historicalShow" : 51,
+    "day" : "2026-11-17",
+    "zeroCapacityShow" : 52
+  },
+  "cancellationsMovieA" : {
+    "from" : "2026-11-17",
+    "to" : "2026-11-18",
+    "timeZone" : "Asia/Ho_Chi_Minh",
+    "timeBasis" : "CANCELLATION_DATE",
+    "asOf" : "2026-10-28T10:41:19.7108582+07:00",
+    "items" : [ {
+      "date" : "2026-11-17",
+      "cancelledBookings" : 1,
+      "cancelledSeats" : 2,
+      "cancelledBookingValue" : 180000
+    }, {
+      "date" : "2026-11-18",
+      "cancelledBookings" : 0,
+      "cancelledSeats" : 0,
+      "cancelledBookingValue" : 0
+    } ],
+    "total" : 2,
+    "page" : 0,
+    "size" : 100,
+    "totalPages" : 1
+  },
+  "showtimesMovieA" : {
+    "from" : "2026-11-17",
+    "to" : "2026-11-18",
+    "timeZone" : "Asia/Ho_Chi_Minh",
+    "timeBasis" : "SHOWTIME_START_DATE",
+    "asOf" : "2026-10-28T10:41:19.7689618+07:00",
+    "items" : [ {
+      "date" : "2026-11-17",
+      "totalShowtimes" : 1,
+      "scheduledShowtimes" : 1,
+      "cancelledShowtimes" : 0
+    }, {
+      "date" : "2026-11-18",
+      "totalShowtimes" : 1,
+      "scheduledShowtimes" : 0,
+      "cancelledShowtimes" : 1
+    } ],
+    "total" : 2,
+    "page" : 0,
+    "size" : 100,
+    "totalPages" : 1
+  },
+  "bookedSeatsMovieA" : {
+    "from" : "2026-11-17",
+    "to" : "2026-11-18",
+    "timeZone" : "Asia/Ho_Chi_Minh",
+    "timeBasis" : "SHOWTIME_START_DATE",
+    "asOf" : "2026-10-28T10:41:19.8049282+07:00",
+    "items" : [ {
+      "movieId" : 51,
+      "movieTitle" : "ST-03f0a7a6890fA",
+      "activeBookings" : 2,
+      "bookedSeats" : 3,
+      "bookingValue" : 260000
+    } ],
+    "total" : 1,
+    "page" : 0,
+    "size" : 100,
+    "totalPages" : 1
+  },
+  "occupancyRoom1" : {
+    "from" : "2026-11-17",
+    "to" : "2026-11-18",
+    "timeZone" : "Asia/Ho_Chi_Minh",
+    "timeBasis" : "SHOWTIME_START_DATE",
+    "asOf" : "2026-10-28T10:41:19.8598698+07:00",
+    "items" : [ {
+      "showtimeId" : 47,
+      "movieId" : 51,
+      "movieTitle" : "ST-03f0a7a6890fA",
+      "roomId" : 51,
+      "roomCode" : "ST-03f0a7a6890fR1",
+      "startsAt" : "2026-11-17T23:00:00+07:00",
+      "bookedSeats" : 3,
+      "capacity" : 4,
+      "capacityBasis" : "SNAPSHOT",
+      "occupancyPercent" : 75.0,
+      "anomaly" : false
+    } ],
+    "total" : 1,
+    "page" : 0,
+    "size" : 100,
+    "totalPages" : 1
+  },
+  "missingHistoricalCapacity" : {
+    "showtimeId" : 51,
+    "movieId" : 51,
+    "movieTitle" : "ST-03f0a7a6890fA",
+    "roomId" : 51,
+    "roomCode" : "ST-03f0a7a6890fR1",
+    "startsAt" : "2001-01-01T00:00:00+07:00",
+    "bookedSeats" : 0,
+    "capacity" : null,
+    "capacityBasis" : "MISSING_HISTORICAL_CAPACITY",
+    "occupancyPercent" : null,
+    "anomaly" : false
+  },
+  "zeroCapacity" : {
+    "showtimeId" : 52,
+    "movieId" : 52,
+    "movieTitle" : "ST-03f0a7a6890fB",
+    "roomId" : 53,
+    "roomCode" : "ST-03f0a7a6890fR3",
+    "startsAt" : "2026-11-17T12:00:00+07:00",
+    "bookedSeats" : 0,
+    "capacity" : 0,
+    "capacityBasis" : "CURRENT_ACTIVE_SEATS_PROVISIONAL",
+    "occupancyPercent" : null,
+    "anomaly" : false
+  }
+}

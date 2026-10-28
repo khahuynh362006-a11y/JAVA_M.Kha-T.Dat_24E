@@ -1,0 +1,16 @@
+[ {
+  "httpStatuses" : [ 200, 409 ],
+  "mysqlConnectionIds" : [ 232, 233 ],
+  "finalOverlapPairs" : 0,
+  "case" : "transfer"
+}, {
+  "httpStatuses" : [ 409, 200 ],
+  "mysqlConnectionIds" : [ 232, 233 ],
+  "finalOverlapPairs" : 0,
+  "case" : "edit"
+}, {
+  "httpStatuses" : [ 201, 409 ],
+  "mysqlConnectionIds" : [ 232, 233 ],
+  "finalOverlapPairs" : 0,
+  "case" : "create"
+} ]

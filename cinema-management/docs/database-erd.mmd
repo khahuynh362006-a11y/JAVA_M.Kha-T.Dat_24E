@@ -1,0 +1,121 @@
+erDiagram
+    users {
+        bigint id PK "bigint unsigned"
+        varchar username UK "varchar(50)"
+        varchar email UK "varchar(254)"
+        varchar display_name "varchar(100)"
+        varchar password_hash "nullable; varchar(255)"
+        varchar status "varchar(16)"
+        datetime created_at "datetime(6)"
+        datetime updated_at "datetime(6)"
+    }
+    roles {
+        bigint id PK "bigint unsigned"
+        varchar code UK "varchar(16)"
+        varchar name "varchar(100)"
+    }
+    user_roles {
+        bigint user_id PK,FK "bigint unsigned"
+        bigint role_id PK,FK "bigint unsigned"
+    }
+    genres {
+        bigint id PK "bigint unsigned"
+        varchar name UK "varchar(100)"
+        varchar description "nullable; varchar(500)"
+    }
+    movies {
+        bigint id PK "bigint unsigned"
+        varchar code UK "varchar(32)"
+        varchar title "varchar(200)"
+        text description "nullable; text"
+        smallint duration_minutes "smallint unsigned"
+        tinyint minimum_age "tinyint unsigned"
+        varchar poster_url "nullable; varchar(2048)"
+        varchar trailer_url "nullable; varchar(2048)"
+        varchar status "varchar(16)"
+        datetime created_at "datetime(6)"
+        datetime updated_at "datetime(6)"
+    }
+    movie_genres {
+        bigint movie_id PK,FK "bigint unsigned"
+        bigint genre_id PK,FK "bigint unsigned"
+    }
+    rooms {
+        bigint id PK "bigint unsigned"
+        varchar code UK "varchar(32)"
+        varchar name "varchar(100)"
+        varchar status "varchar(16)"
+        datetime created_at "datetime(6)"
+    }
+    seats {
+        bigint id PK "bigint unsigned"
+        bigint room_id FK "bigint unsigned"
+        varchar code "varchar(16)"
+        varchar row_label "varchar(4)"
+        smallint seat_number "smallint unsigned"
+        varchar seat_type "varchar(16)"
+        varchar status "varchar(16)"
+    }
+    showtimes {
+        bigint id PK "bigint unsigned"
+        bigint movie_id FK "bigint unsigned"
+        bigint room_id FK "bigint unsigned"
+        smallint duration_minutes_snapshot "smallint unsigned"
+        tinyint minimum_age_snapshot "tinyint unsigned"
+        datetime starts_at "datetime"
+        datetime ends_at "datetime"
+        decimal standard_price "decimal(12,0)"
+        decimal vip_price "decimal(12,0)"
+        bigint price_version "bigint unsigned"
+        smallint capacity_snapshot "nullable; smallint unsigned"
+        varchar status "varchar(16)"
+        datetime cancelled_at "nullable; datetime(6)"
+        bigint cancelled_by FK "nullable; bigint unsigned"
+        varchar cancel_reason "nullable; varchar(500)"
+        datetime created_at "datetime(6)"
+    }
+    bookings {
+        bigint id PK "bigint unsigned"
+        varchar code UK "varchar(40)"
+        bigint showtime_id FK "bigint unsigned"
+        bigint room_id FK "bigint unsigned"
+        bigint created_by FK "bigint unsigned"
+        varchar idempotency_key "nullable; varchar(36); UNIQUE with created_by"
+        varchar request_hash "nullable; varchar(64); immutable"
+        varchar created_by_name_snapshot "varchar(100)"
+        varchar movie_title_snapshot "varchar(200)"
+        varchar room_code_snapshot "varchar(32)"
+        bigint price_version_snapshot "bigint unsigned"
+        decimal total_amount "decimal(14,0)"
+        tinyint age_checked "tinyint(1)"
+        varchar status "varchar(16)"
+        datetime created_at "datetime(6)"
+        datetime cancelled_at "nullable; datetime(6)"
+        bigint cancelled_by FK "nullable; bigint unsigned"
+        varchar cancel_reason "nullable; varchar(500)"
+    }
+    booking_seats {
+        bigint id PK "bigint unsigned"
+        bigint booking_id FK "bigint unsigned"
+        bigint showtime_id FK "bigint unsigned"
+        bigint room_id FK "bigint unsigned"
+        bigint seat_id FK "bigint unsigned"
+        varchar seat_code_snapshot "varchar(16)"
+        varchar seat_type_snapshot "varchar(16)"
+        decimal unit_price "decimal(12,0)"
+        varchar booking_status "varchar(16)"
+        bigint active_seat_id "nullable; generated; bigint unsigned"
+    }
+    bookings ||--o{ booking_seats : "booking_id,showtime_id,room_id"
+    seats ||--o{ booking_seats : "seat_id,room_id"
+    users |o--o{ bookings : "cancelled_by"
+    users ||--o{ bookings : "created_by"
+    showtimes ||--o{ bookings : "showtime_id,room_id"
+    genres ||--o{ movie_genres : "genre_id"
+    movies ||--o{ movie_genres : "movie_id"
+    rooms ||--o{ seats : "room_id"
+    users |o--o{ showtimes : "cancelled_by"
+    movies ||--o{ showtimes : "movie_id"
+    rooms ||--o{ showtimes : "room_id"
+    roles ||--o{ user_roles : "role_id"
+    users ||--o{ user_roles : "user_id"

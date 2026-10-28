@@ -1,0 +1,21 @@
+{
+  "document": "Bao_cao_do_an_rap_phim_Kha_Dat.docx",
+  "sha256": "0fcc8b4c7bd6093f1a8c1dc6fd38ae0c4f0e283876cfbe86212ceb5d9ff05265",
+  "pages": 11,
+  "visualReviewedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "renderer": "Microsoft Word ExportAsFixedFormat and bundled Poppler",
+  "canonicalRendererLimitation": "Bundled LibreOffice unavailable on Windows; native Word used successfully",
+  "checkedAt": "2026-10-28T11:52:31.146082+07:00"
+}

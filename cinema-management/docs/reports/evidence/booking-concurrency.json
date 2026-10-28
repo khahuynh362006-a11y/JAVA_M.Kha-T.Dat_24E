@@ -1,0 +1,43 @@
+[ {
+  "case" : "same-key-different-shows",
+  "duplicateActiveSeats" : 0,
+  "statuses" : [ 201, 409 ],
+  "partialBookings" : 0,
+  "mysqlConnectionIds" : [ 219, 220 ]
+}, {
+  "case" : "showtime-cancel-vs-book",
+  "duplicateActiveSeats" : 0,
+  "statuses" : [ 200, 409 ],
+  "partialBookings" : 0,
+  "mysqlConnectionIds" : [ 219, 220 ]
+}, {
+  "case" : "cancel-and-rebook",
+  "duplicateActiveSeats" : 0,
+  "statuses" : [ 200, 201 ],
+  "partialBookings" : 0,
+  "mysqlConnectionIds" : [ 219, 220 ]
+}, {
+  "case" : "same-seat",
+  "duplicateActiveSeats" : 0,
+  "statuses" : [ 409, 201 ],
+  "partialBookings" : 0,
+  "mysqlConnectionIds" : [ 219, 220 ]
+}, {
+  "case" : "same-idempotency-key",
+  "duplicateActiveSeats" : 0,
+  "statuses" : [ 201, 200 ],
+  "partialBookings" : 0,
+  "mysqlConnectionIds" : [ 219, 220 ]
+}, {
+  "case" : "showtime-edit-vs-book",
+  "duplicateActiveSeats" : 0,
+  "statuses" : [ 200, 201 ],
+  "partialBookings" : 0,
+  "mysqlConnectionIds" : [ 219, 220 ]
+}, {
+  "case" : "overlapping-groups",
+  "duplicateActiveSeats" : 0,
+  "statuses" : [ 201, 409 ],
+  "partialBookings" : 0,
+  "mysqlConnectionIds" : [ 219, 220 ]
+} ]

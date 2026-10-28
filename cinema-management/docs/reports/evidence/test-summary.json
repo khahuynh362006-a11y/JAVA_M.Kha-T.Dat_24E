@@ -1,0 +1,70 @@
+{
+  "totalTests": 88,
+  "suites": [
+    {
+      "name": "com.khadat.cinema.integration.FoundationErrorHandlingTest",
+      "tests": "12",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "7.316"
+    },
+    {
+      "name": "com.khadat.cinema.integration.BookingMySqlIT",
+      "tests": "15",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "38.413"
+    },
+    {
+      "name": "com.khadat.cinema.integration.CatalogMySqlIT",
+      "tests": "13",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "11.511"
+    },
+    {
+      "name": "com.khadat.cinema.integration.FoundationMySqlIT",
+      "tests": "5",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "2.566"
+    },
+    {
+      "name": "com.khadat.cinema.integration.RoomSeatMySqlIT",
+      "tests": "12",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "9.623"
+    },
+    {
+      "name": "com.khadat.cinema.integration.SecurityMySqlIT",
+      "tests": "14",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "18.054"
+    },
+    {
+      "name": "com.khadat.cinema.integration.ShowtimeMySqlIT",
+      "tests": "13",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "11.097"
+    },
+    {
+      "name": "com.khadat.cinema.integration.StatisticsMySqlIT",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "5.103"
+    }
+  ],
+  "database": "cinema_management_test_final_20261028_103848"
+}

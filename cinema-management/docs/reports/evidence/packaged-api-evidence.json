@@ -1,0 +1,685 @@
+{
+  "capturedAt": "2026-10-28T03:50:10.354Z",
+  "frontendTested": false,
+  "formattingNote": "Screenshots show actual API JSON with whitespace formatting only",
+  "records": [
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200,
+      "response": {
+        "id": 18,
+        "username": "demo-admin-f77151bfafb2",
+        "displayName": "Packaged demo ADMIN",
+        "email": "demo-admin-f77151bfafb2@example.invalid",
+        "roles": [
+          "ADMIN"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me",
+      "status": 200,
+      "response": {
+        "id": 18,
+        "username": "demo-admin-f77151bfafb2",
+        "displayName": "Packaged demo ADMIN",
+        "email": "demo-admin-f77151bfafb2@example.invalid",
+        "roles": [
+          "ADMIN"
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/genres",
+      "status": 201,
+      "response": {
+        "id": 23,
+        "name": "RUN-72d8def49b164e Genre",
+        "description": "Packaged JAR evidence"
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/admin/genres/23",
+      "status": 200,
+      "response": {
+        "id": 23,
+        "name": "RUN-72d8def49b164e Updated",
+        "description": null
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/movies",
+      "status": 400,
+      "response": {
+        "timestamp": "2026-10-28T10:50:07.1839783+07:00",
+        "status": 400,
+        "code": "VALIDATION_FAILED",
+        "message": "Dữ liệu đầu vào không hợp lệ.",
+        "path": "/api/admin/movies",
+        "fieldErrors": {
+          "durationMinutes": [
+            "Giá trị không hợp lệ."
+          ]
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/movies",
+      "status": 201,
+      "response": {
+        "id": 53,
+        "code": "RUN-72D8DEF49B164E",
+        "title": "Packaged demo RUN-72d8def49b164e",
+        "description": null,
+        "durationMinutes": 120,
+        "minimumAge": 13,
+        "posterUrl": null,
+        "trailerUrl": null,
+        "status": "ACTIVE",
+        "genreIds": [
+          23
+        ],
+        "genres": [
+          {
+            "id": 23,
+            "name": "RUN-72d8def49b164e Updated",
+            "description": null
+          }
+        ],
+        "createdAt": "2026-10-28T10:50:07.222977",
+        "updatedAt": "2026-10-28T10:50:07.222977"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/rooms",
+      "status": 201,
+      "response": {
+        "id": 54,
+        "code": "RUN-72D8DEF49B164E",
+        "name": "RUN-72d8def49b164e",
+        "status": "ACTIVE",
+        "seatCount": 0,
+        "activeSeatCount": 0,
+        "createdAt": "2026-10-28T10:50:07.332955"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/rooms/54/seats/bulk",
+      "status": 201,
+      "response": {
+        "room": {
+          "id": 54,
+          "code": "RUN-72D8DEF49B164E",
+          "name": "RUN-72d8def49b164e",
+          "status": "ACTIVE",
+          "seatCount": 3,
+          "activeSeatCount": 3,
+          "createdAt": "2026-10-28T10:50:07.332955"
+        },
+        "seats": [
+          {
+            "id": 134,
+            "roomId": 54,
+            "code": "A1",
+            "rowLabel": "A",
+            "seatNumber": 1,
+            "seatType": "STANDARD",
+            "status": "ACTIVE"
+          },
+          {
+            "id": 135,
+            "roomId": 54,
+            "code": "A2",
+            "rowLabel": "A",
+            "seatNumber": 2,
+            "seatType": "STANDARD",
+            "status": "ACTIVE"
+          },
+          {
+            "id": 136,
+            "roomId": 54,
+            "code": "A3",
+            "rowLabel": "A",
+            "seatNumber": 3,
+            "seatType": "STANDARD",
+            "status": "ACTIVE"
+          }
+        ]
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/admin/rooms/54/seats/135",
+      "status": 200,
+      "response": {
+        "id": 135,
+        "roomId": 54,
+        "code": "A2",
+        "rowLabel": "A",
+        "seatNumber": 2,
+        "seatType": "VIP",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/showtimes",
+      "status": 201,
+      "response": {
+        "id": 53,
+        "movieId": 53,
+        "movieTitle": "Packaged demo RUN-72d8def49b164e",
+        "posterUrl": null,
+        "roomId": 54,
+        "roomCode": "RUN-72D8DEF49B164E",
+        "roomName": "RUN-72d8def49b164e",
+        "startsAt": "2026-11-27T18:00:00+07:00",
+        "endsAt": "2026-11-27T20:00:00+07:00",
+        "durationMinutes": 120,
+        "minimumAge": 13,
+        "standardPrice": 80000,
+        "vipPrice": 100000,
+        "priceVersion": 0,
+        "status": "SCHEDULED",
+        "phase": "UPCOMING",
+        "_links": {
+          "self": {
+            "href": "/api/admin/showtimes/53"
+          },
+          "collection": {
+            "href": "/api/admin/showtimes"
+          },
+          "movie": {
+            "href": "/api/admin/movies/53"
+          },
+          "room": {
+            "href": "/api/admin/rooms/54"
+          },
+          "update": {
+            "href": "/api/admin/showtimes/53",
+            "type": "application/json"
+          },
+          "delete": {
+            "href": "/api/admin/showtimes/53"
+          },
+          "cancel": {
+            "href": "/api/admin/showtimes/53/cancel",
+            "type": "application/json"
+          }
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/showtimes",
+      "status": 409,
+      "response": {
+        "timestamp": "2026-10-28T10:50:07.7015992+07:00",
+        "status": 409,
+        "code": "SHOWTIME_CONFLICT",
+        "message": "Suất trùng lịch hoặc chưa đủ 15 phút nghỉ trong phòng.",
+        "path": "/api/admin/showtimes",
+        "fieldErrors": {}
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/showtimes/53",
+      "status": 200,
+      "response": {
+        "id": 53,
+        "movieId": 53,
+        "movieTitle": "Packaged demo RUN-72d8def49b164e",
+        "posterUrl": null,
+        "roomId": 54,
+        "roomCode": "RUN-72D8DEF49B164E",
+        "roomName": "RUN-72d8def49b164e",
+        "startsAt": "2026-11-27T18:00:00+07:00",
+        "endsAt": "2026-11-27T20:00:00+07:00",
+        "durationMinutes": 120,
+        "minimumAge": 13,
+        "standardPrice": 80000,
+        "vipPrice": 100000,
+        "priceVersion": 0,
+        "status": "SCHEDULED",
+        "phase": "UPCOMING",
+        "_links": {
+          "self": {
+            "href": "/api/admin/showtimes/53"
+          },
+          "collection": {
+            "href": "/api/admin/showtimes"
+          },
+          "movie": {
+            "href": "/api/admin/movies/53"
+          },
+          "room": {
+            "href": "/api/admin/rooms/54"
+          },
+          "update": {
+            "href": "/api/admin/showtimes/53",
+            "type": "application/json"
+          },
+          "delete": {
+            "href": "/api/admin/showtimes/53"
+          },
+          "cancel": {
+            "href": "/api/admin/showtimes/53/cancel",
+            "type": "application/json"
+          }
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/bookings",
+      "status": 201,
+      "response": {
+        "id": 29,
+        "code": "BK-F6152439F4FB4D908867F90FB972F504",
+        "showtimeId": 53,
+        "roomId": 54,
+        "movieTitle": "Packaged demo RUN-72d8def49b164e",
+        "roomCode": "RUN-72D8DEF49B164E",
+        "startsAt": "2026-11-27T18:00:00+07:00",
+        "endsAt": "2026-11-27T20:00:00+07:00",
+        "createdBy": 18,
+        "createdByName": "Packaged demo ADMIN",
+        "createdAt": "2026-10-28T10:50:07.795879+07:00",
+        "priceVersion": 0,
+        "ageChecked": true,
+        "totalAmount": 180000,
+        "status": "CONFIRMED",
+        "cancelledAt": null,
+        "cancelledBy": null,
+        "cancelReason": null,
+        "seats": [
+          {
+            "seatId": 134,
+            "code": "A1",
+            "seatType": "STANDARD",
+            "unitPrice": 80000,
+            "bookingStatus": "CONFIRMED"
+          },
+          {
+            "seatId": 135,
+            "code": "A2",
+            "seatType": "VIP",
+            "unitPrice": 100000,
+            "bookingStatus": "CONFIRMED"
+          }
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/bookings",
+      "status": 200,
+      "response": {
+        "id": 29,
+        "code": "BK-F6152439F4FB4D908867F90FB972F504",
+        "showtimeId": 53,
+        "roomId": 54,
+        "movieTitle": "Packaged demo RUN-72d8def49b164e",
+        "roomCode": "RUN-72D8DEF49B164E",
+        "startsAt": "2026-11-27T18:00:00+07:00",
+        "endsAt": "2026-11-27T20:00:00+07:00",
+        "createdBy": 18,
+        "createdByName": "Packaged demo ADMIN",
+        "createdAt": "2026-10-28T10:50:07.795879+07:00",
+        "priceVersion": 0,
+        "ageChecked": true,
+        "totalAmount": 180000,
+        "status": "CONFIRMED",
+        "cancelledAt": null,
+        "cancelledBy": null,
+        "cancelReason": null,
+        "seats": [
+          {
+            "seatId": 134,
+            "code": "A1",
+            "seatType": "STANDARD",
+            "unitPrice": 80000,
+            "bookingStatus": "CONFIRMED"
+          },
+          {
+            "seatId": 135,
+            "code": "A2",
+            "seatType": "VIP",
+            "unitPrice": 100000,
+            "bookingStatus": "CONFIRMED"
+          }
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/bookings",
+      "status": 409,
+      "response": {
+        "timestamp": "2026-10-28T10:50:07.9351867+07:00",
+        "status": 409,
+        "code": "SEAT_ALREADY_BOOKED",
+        "message": "Có ghế vừa được người khác đặt; hãy tải lại sơ đồ.",
+        "path": "/api/bookings",
+        "fieldErrors": {}
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/bookings/29/cancel",
+      "status": 200,
+      "response": {
+        "id": 29,
+        "code": "BK-F6152439F4FB4D908867F90FB972F504",
+        "showtimeId": 53,
+        "roomId": 54,
+        "movieTitle": "Packaged demo RUN-72d8def49b164e",
+        "roomCode": "RUN-72D8DEF49B164E",
+        "startsAt": "2026-11-27T18:00:00+07:00",
+        "endsAt": "2026-11-27T20:00:00+07:00",
+        "createdBy": 18,
+        "createdByName": "Packaged demo ADMIN",
+        "createdAt": "2026-10-28T10:50:07.795879+07:00",
+        "priceVersion": 0,
+        "ageChecked": true,
+        "totalAmount": 180000,
+        "status": "CANCELLED",
+        "cancelledAt": "2026-10-28T10:50:07.972678+07:00",
+        "cancelledBy": 18,
+        "cancelReason": "Packaged demo",
+        "seats": [
+          {
+            "seatId": 134,
+            "code": "A1",
+            "seatType": "STANDARD",
+            "unitPrice": 80000,
+            "bookingStatus": "CANCELLED"
+          },
+          {
+            "seatId": 135,
+            "code": "A2",
+            "seatType": "VIP",
+            "unitPrice": 100000,
+            "bookingStatus": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/bookings",
+      "status": 201,
+      "response": {
+        "id": 30,
+        "code": "BK-606685C7463646C58347C53487B47564",
+        "showtimeId": 53,
+        "roomId": 54,
+        "movieTitle": "Packaged demo RUN-72d8def49b164e",
+        "roomCode": "RUN-72D8DEF49B164E",
+        "startsAt": "2026-11-27T18:00:00+07:00",
+        "endsAt": "2026-11-27T20:00:00+07:00",
+        "createdBy": 18,
+        "createdByName": "Packaged demo ADMIN",
+        "createdAt": "2026-10-28T10:50:08.029109+07:00",
+        "priceVersion": 0,
+        "ageChecked": true,
+        "totalAmount": 80000,
+        "status": "CONFIRMED",
+        "cancelledAt": null,
+        "cancelledBy": null,
+        "cancelReason": null,
+        "seats": [
+          {
+            "seatId": 134,
+            "code": "A1",
+            "seatType": "STANDARD",
+            "unitPrice": 80000,
+            "bookingStatus": "CONFIRMED"
+          }
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/bookings/29/cancel",
+      "status": 200,
+      "response": {
+        "id": 29,
+        "code": "BK-F6152439F4FB4D908867F90FB972F504",
+        "showtimeId": 53,
+        "roomId": 54,
+        "movieTitle": "Packaged demo RUN-72d8def49b164e",
+        "roomCode": "RUN-72D8DEF49B164E",
+        "startsAt": "2026-11-27T18:00:00+07:00",
+        "endsAt": "2026-11-27T20:00:00+07:00",
+        "createdBy": 18,
+        "createdByName": "Packaged demo ADMIN",
+        "createdAt": "2026-10-28T10:50:07.795879+07:00",
+        "priceVersion": 0,
+        "ageChecked": true,
+        "totalAmount": 180000,
+        "status": "CANCELLED",
+        "cancelledAt": "2026-10-28T10:50:07.972678+07:00",
+        "cancelledBy": 18,
+        "cancelReason": "Packaged demo",
+        "seats": [
+          {
+            "seatId": 134,
+            "code": "A1",
+            "seatType": "STANDARD",
+            "unitPrice": 80000,
+            "bookingStatus": "CANCELLED"
+          },
+          {
+            "seatId": 135,
+            "code": "A2",
+            "seatType": "VIP",
+            "unitPrice": 100000,
+            "bookingStatus": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/bookings/30/cancel",
+      "status": 200,
+      "response": {
+        "id": 30,
+        "code": "BK-606685C7463646C58347C53487B47564",
+        "showtimeId": 53,
+        "roomId": 54,
+        "movieTitle": "Packaged demo RUN-72d8def49b164e",
+        "roomCode": "RUN-72D8DEF49B164E",
+        "startsAt": "2026-11-27T18:00:00+07:00",
+        "endsAt": "2026-11-27T20:00:00+07:00",
+        "createdBy": 18,
+        "createdByName": "Packaged demo ADMIN",
+        "createdAt": "2026-10-28T10:50:08.029109+07:00",
+        "priceVersion": 0,
+        "ageChecked": true,
+        "totalAmount": 80000,
+        "status": "CANCELLED",
+        "cancelledAt": "2026-10-28T10:50:08.125073+07:00",
+        "cancelledBy": 18,
+        "cancelReason": "Keep demo history",
+        "seats": [
+          {
+            "seatId": 134,
+            "code": "A1",
+            "seatType": "STANDARD",
+            "unitPrice": 80000,
+            "bookingStatus": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200,
+      "response": {
+        "id": 19,
+        "username": "demo-staff-3c38bc498a44",
+        "displayName": "Packaged demo STAFF",
+        "email": "demo-staff-3c38bc498a44@example.invalid",
+        "roles": [
+          "STAFF"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/statistics/showtimes?from=2026-11-27&to=2026-11-27",
+      "status": 403,
+      "response": {
+        "timestamp": "2026-10-28T10:50:08.6759206+07:00",
+        "status": 403,
+        "code": "FORBIDDEN",
+        "message": "Không có quyền thực hiện.",
+        "path": "/api/admin/statistics/showtimes",
+        "fieldErrors": {}
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/movies",
+      "status": 403,
+      "response": {
+        "timestamp": "2026-10-28T10:50:08.6884861+07:00",
+        "status": 403,
+        "code": "FORBIDDEN",
+        "message": "Không có quyền thực hiện.",
+        "path": "/api/admin/movies",
+        "fieldErrors": {}
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/showtimes/53/seats",
+      "status": 200,
+      "response": {
+        "showtime": {
+          "id": 53,
+          "movieId": 53,
+          "movieTitle": "Packaged demo RUN-72d8def49b164e",
+          "posterUrl": null,
+          "roomId": 54,
+          "roomCode": "RUN-72D8DEF49B164E",
+          "roomName": "RUN-72d8def49b164e",
+          "startsAt": "2026-11-27T18:00:00+07:00",
+          "endsAt": "2026-11-27T20:00:00+07:00",
+          "durationMinutes": 120,
+          "minimumAge": 13,
+          "standardPrice": 80000,
+          "vipPrice": 100000,
+          "priceVersion": 0,
+          "status": "SCHEDULED",
+          "phase": "UPCOMING"
+        },
+        "bookable": true,
+        "seats": [
+          {
+            "id": 134,
+            "rowLabel": "A",
+            "seatNumber": 1,
+            "code": "A1",
+            "seatType": "STANDARD",
+            "physicalStatus": "ACTIVE",
+            "availability": "AVAILABLE",
+            "price": 80000
+          },
+          {
+            "id": 135,
+            "rowLabel": "A",
+            "seatNumber": 2,
+            "code": "A2",
+            "seatType": "VIP",
+            "physicalStatus": "ACTIVE",
+            "availability": "AVAILABLE",
+            "price": 100000
+          },
+          {
+            "id": 136,
+            "rowLabel": "A",
+            "seatNumber": 3,
+            "code": "A3",
+            "seatType": "STANDARD",
+            "physicalStatus": "ACTIVE",
+            "availability": "AVAILABLE",
+            "price": 80000
+          }
+        ]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200,
+      "response": {
+        "id": 18,
+        "username": "demo-admin-f77151bfafb2",
+        "displayName": "Packaged demo ADMIN",
+        "email": "demo-admin-f77151bfafb2@example.invalid",
+        "roles": [
+          "ADMIN"
+        ]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/statistics/booked-seats?from=2026-11-17&to=2026-11-17&movieId=51",
+      "status": 200,
+      "response": {
+        "from": "2026-11-17",
+        "to": "2026-11-17",
+        "timeZone": "Asia/Ho_Chi_Minh",
+        "timeBasis": "SHOWTIME_START_DATE",
+        "asOf": "2026-10-28T10:50:09.3494151+07:00",
+        "items": [
+          {
+            "movieId": 51,
+            "movieTitle": "ST-03f0a7a6890fA",
+            "activeBookings": 2,
+            "bookedSeats": 3,
+            "bookingValue": 260000
+          }
+        ],
+        "total": 1,
+        "page": 0,
+        "size": 20,
+        "totalPages": 1
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/logout",
+      "status": 200,
+      "response": {
+        "status": "LOGGED_OUT"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me",
+      "status": 401,
+      "response": {
+        "timestamp": "2026-10-28T10:50:10.3490512+07:00",
+        "status": 401,
+        "code": "UNAUTHENTICATED",
+        "message": "Cần đăng nhập.",
+        "path": "/api/auth/me",
+        "fieldErrors": {}
+      }
+    }
+  ]
+}
