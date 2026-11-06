@@ -1,0 +1,3 @@
+app:
+  payments.mode: ${PAYMENT_MODE:payos}
+logging.level.com.cineverse: INFO

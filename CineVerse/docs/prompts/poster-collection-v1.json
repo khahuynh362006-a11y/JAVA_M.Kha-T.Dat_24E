@@ -1,0 +1,362 @@
+{
+  "generator": "built-in imagegen",
+  "created": "2026-11-05",
+  "excludedTitles": [
+    "test",
+    "Phim kiểm thử E2E"
+  ],
+  "retainedPoster": "/art/poster-horizon-realistic-v1.png",
+  "posters": [
+    {
+      "n": 2,
+      "slug": "thanh-pho-khong-ngu",
+      "title": "Thành phố không ngủ",
+      "originalTitle": "The Sleepless City",
+      "genre": "Hành động",
+      "destination": "frontend/public/art/posters/thanh-pho-khong-ngu-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Thành phố không ngủ\" (The Sleepless City), genre Hành động. A Vietnamese detective in a weathered coat stands under hard rain in a neon-lit Saigon alley, vivid reflections in wet asphalt, a distant motorbike silhouette. Tight expressive portrait integrated with a gritty urban wide shot. Midnight blue and restrained red neon, tense crime-thriller atmosphere. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"THÀNH PHỐ KHÔNG NGỦ\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"THE SLEEPLESS CITY\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 3,
+      "slug": "mua-he-nam-ay",
+      "title": "Mùa hè năm ấy",
+      "originalTitle": "That Summer",
+      "genre": "Tình cảm",
+      "destination": "frontend/public/art/posters/mua-he-nam-ay-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Mùa hè năm ấy\" (That Summer), genre Tình cảm. Two Vietnamese young adults reunite on a sunlit seaside promenade, wind in their hair, one holding old handwritten letters. Natural candid chemistry and textured skin, sea glints and summer haze. Warm honey sunlight, sea blue, nostalgic romantic drama. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"MÙA HÈ NĂM ẤY\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"THAT SUMMER\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 4,
+      "slug": "dau-chan-tren-may",
+      "title": "Dấu chân trên mây",
+      "originalTitle": "Footprints in the Sky",
+      "genre": "Phiêu lưu",
+      "destination": "frontend/public/art/posters/dau-chan-tren-may-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Dấu chân trên mây\" (Footprints in the Sky), genre Phiêu lưu. A Vietnamese young photographer carrying a worn camera hikes a steep trail above clouds in the northern Vietnamese mountains, immense layered peaks and a tiny lone house on a ridge. Practical outdoor clothing and weathered backpack, dawn light, majestic grounded adventure photography. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"DẤU CHÂN TRÊN MÂY\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"FOOTPRINTS IN THE SKY\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 5,
+      "slug": "khu-rung-thi-tham",
+      "title": "Khu rừng thì thầm",
+      "originalTitle": "The Whispering Woods",
+      "genre": "Kỳ ảo",
+      "destination": "frontend/public/art/posters/khu-rung-thi-tham-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Khu rừng thì thầm\" (The Whispering Woods), genre Kỳ ảo. A Vietnamese girl discovers an antique key at the roots of an immense ancient tree inside a misty forest. Cinematic practical fantasy, real bark, soft luminous foliage, awe on her face. Deep emerald, restrained gold, mysterious but inviting, convincing photographic child and forest. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"KHU RỪNG THÌ THẦM\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"THE WHISPERING WOODS\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 6,
+      "slug": "chuyen-tau-cuoi-cung",
+      "title": "Chuyến tàu cuối cùng",
+      "originalTitle": "The Last Train",
+      "genre": "Bí ẩn",
+      "destination": "frontend/public/art/posters/chuyen-tau-cuoi-cung-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Chuyến tàu cuối cùng\" (The Last Train), genre Bí ẩn. Seven unrelated adult passengers sit in an old overnight train carriage with worn leather seats, fog streaming past the windows. One worried Vietnamese woman in the foreground watches a ghostly empty platform beyond glass. Moody tungsten light and cold blue shadows, elegant psychological mystery. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"CHUYẾN TÀU CUỐI CÙNG\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"THE LAST TRAIN\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 7,
+      "slug": "dai-duong-tinh-lang",
+      "title": "Đại dương tĩnh lặng",
+      "originalTitle": "The Silent Ocean",
+      "genre": "Tài liệu",
+      "destination": "frontend/public/art/posters/dai-duong-tinh-lang-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Đại dương tĩnh lặng\" (The Silent Ocean), genre Tài liệu. An immense whale glides through shafts of sunlight in deep blue ocean, a small scuba diver at respectful distance gives scale, intricate natural marine life in foreground. Breathtaking realistic underwater documentary photography, crisp textures, turquoise depth and luminous sunbeams. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"ĐẠI DƯƠNG TĨNH LẶNG\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"THE SILENT OCEAN\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 8,
+      "slug": "nhung-ngay-ruc-ro",
+      "title": "Những ngày rực rỡ",
+      "originalTitle": "Radiant Days",
+      "genre": "Hài hước",
+      "destination": "frontend/public/art/posters/nhung-ngay-ruc-ro-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Những ngày rực rỡ\" (Radiant Days), genre Hài hước. A lively group of Vietnamese friends in their twenties at the doorway of their tiny new neighborhood cafe, spilled coffee and mismatched chairs, genuine laughter, climbing plants and warm morning light. Authentic film-still realism, inviting amber and lively green, charming comedy. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"NHỮNG NGÀY RỰC RỠ\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"RADIANT DAYS\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 9,
+      "slug": "tin-hieu-2099",
+      "title": "Tín hiệu 2099",
+      "originalTitle": "Signal 2099",
+      "genre": "Khoa học viễn tưởng",
+      "destination": "frontend/public/art/posters/tin-hieu-2099-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Tín hiệu 2099\" (Signal 2099), genre Khoa học viễn tưởng. A Vietnamese woman engineer in a realistic near-future control room, her concentrated face lit by a monitor with abstract light patterns, a vast future city reflected in the glass. A dramatic signal-like column of light in the distance. Cinematic sci-fi photography with tactile electronics, cyan and amber. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"TÍN HIỆU 2099\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"SIGNAL 2099\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 10,
+      "slug": "bong-toi-sau-cua",
+      "title": "Bóng tối sau cửa",
+      "originalTitle": "Behind the Door",
+      "genre": "Kinh dị",
+      "destination": "frontend/public/art/posters/bong-toi-sau-cua-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Bóng tối sau cửa\" (Behind the Door), genre Kinh dị. A frightened Vietnamese adult woman holding a flashlight stands in the hallway of an inherited old house, one locked wooden door at the end barely outlined by cold light, weathered plaster and dark shadows. Restrained cinematic horror, no gore, threatening negative space, muted green and pale silver. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"BÓNG TỐI SAU CỬA\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"BEHIND THE DOOR\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 11,
+      "slug": "nguoi-giu-binh-minh",
+      "title": "Người giữ bình minh",
+      "originalTitle": "Keeper of Dawn",
+      "genre": "Chính kịch",
+      "destination": "frontend/public/art/posters/nguoi-giu-binh-minh-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Người giữ bình minh\" (Keeper of Dawn), genre Chính kịch. An elderly Vietnamese lighthouse keeper with salt-weathered skin and a raincoat watches dawn break over a damaged coastal fishing town after a storm. Lighthouse and turbulent sea below, a small warm light on the shore. Emotional human portrait and expansive landscape, dignified realistic drama. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"NGƯỜI GIỮ BÌNH MINH\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"KEEPER OF DAWN\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 12,
+      "slug": "duong-ve-phuong-bac",
+      "title": "Đường về phương Bắc",
+      "originalTitle": "Northbound",
+      "genre": "Phiêu lưu",
+      "destination": "frontend/public/art/posters/duong-ve-phuong-bac-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Đường về phương Bắc\" (Northbound), genre Phiêu lưu. Two adult Vietnamese brothers beside an old faded minibus on a winding northern mountain pass, one holding a road map, their expressions showing years of distance and renewed hope. Lush ridges, low drifting clouds, authentic travel film photography, sage green and warm sunrise. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"ĐƯỜNG VỀ PHƯƠNG BẮC\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"NORTHBOUND\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 13,
+      "slug": "mat-ma-sao-bang",
+      "title": "Mật mã sao băng",
+      "originalTitle": "Meteor Code",
+      "genre": "Hành động",
+      "destination": "frontend/public/art/posters/mat-ma-sao-bang-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Mật mã sao băng\" (Meteor Code), genre Hành động. A Vietnamese astronomer in a remote observatory studies photographic star charts as a brilliant meteor crosses a crisp night sky above the dome. Layer her expressive portrait with dramatic observatory architecture and dark mountains. Sharp practical detail, silver starlight and amber desk light, suspenseful adventure. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"MẬT MÃ SAO BĂNG\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"METEOR CODE\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 14,
+      "slug": "loi-hen-mua-thu",
+      "title": "Lời hẹn mùa thu",
+      "originalTitle": "An Autumn Promise",
+      "genre": "Tình cảm",
+      "destination": "frontend/public/art/posters/loi-hen-mua-thu-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Lời hẹn mùa thu\" (An Autumn Promise), genre Tình cảm. Two Vietnamese adult musicians on a tree-lined old-city street covered with golden autumn leaves, one holding a violin case and a folded unfinished score. Gentle romantic eye contact, soft wind, nostalgic 35mm photography, warm gold and burgundy. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"LỜI HẸN MÙA THU\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"AN AUTUMN PROMISE\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 15,
+      "slug": "vung-dat-da-quen",
+      "title": "Vùng đất đã quên",
+      "originalTitle": "The Forgotten Land",
+      "genre": "Kỳ ảo",
+      "destination": "frontend/public/art/posters/vung-dat-da-quen-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Vùng đất đã quên\" (The Forgotten Land), genre Kỳ ảo. A Vietnamese artist carrying a sketchbook and a worn folded map stands before the entrance of an ancient kingdom half concealed by mist. Monumental moss-covered stone, breathtaking valley, dramatic warm light through clouds. Photographic live-action fantasy with believable natural scale. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"VÙNG ĐẤT ĐÃ QUÊN\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"THE FORGOTTEN LAND\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 16,
+      "slug": "doi-giai-cuu-ti-hon",
+      "title": "Đội giải cứu tí hon",
+      "originalTitle": "Tiny Rescue Team",
+      "genre": "Hoạt hình",
+      "destination": "frontend/public/art/posters/doi-giai-cuu-ti-hon-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Đội giải cứu tí hon\" (Tiny Rescue Team), genre Hoạt hình. Tiny brave garden creatures, a ladybug, a beetle and a little field mouse, team up to rescue seedlings under enormous leaves before a rainstorm. Feature-film-quality realistic macro miniature cinematography, tactile fur, insect shells, water drops and earth, expressive friendly faces, adventurous family-film mood. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"ĐỘI GIẢI CỨU TÍ HON\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"TINY RESCUE TEAM\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 17,
+      "slug": "nhip-dap-sai-gon",
+      "title": "Nhịp đập Sài Gòn",
+      "originalTitle": "Saigon Heartbeat",
+      "genre": "Chính kịch",
+      "destination": "frontend/public/art/posters/nhip-dap-sai-gon-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Nhịp đập Sài Gòn\" (Saigon Heartbeat), genre Chính kịch. Several ordinary Vietnamese lives intersect on a Saigon street during a power outage: a street-food vendor lighting a lantern and a young delivery rider helping an elderly neighbor in foreground. Real humid night atmosphere, silhouettes of balconies, rich amber lantern glow, heartfelt ensemble drama. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"NHỊP ĐẬP SÀI GÒN\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"SAIGON HEARTBEAT\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 18,
+      "slug": "canh-cua-thoi-gian",
+      "title": "Cánh cửa thời gian",
+      "originalTitle": "The Time Door",
+      "genre": "Khoa học viễn tưởng",
+      "destination": "frontend/public/art/posters/canh-cua-thoi-gian-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Cánh cửa thời gian\" (The Time Door), genre Khoa học viễn tưởng. A Vietnamese university student stands before a luminous doorway inside a weathered old apartment; through it the same street appears decades earlier. Split temporal reflections in the glass, her thoughtful face in close-up. Realistic practical-location sci-fi, cyan versus warm sepia. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"CÁNH CỬA THỜI GIAN\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"THE TIME DOOR\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 19,
+      "slug": "ho-so-so-khong",
+      "title": "Hồ sơ số không",
+      "originalTitle": "Case Zero",
+      "genre": "Bí ẩn",
+      "destination": "frontend/public/art/posters/ho-so-so-khong-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Hồ sơ số không\" (Case Zero), genre Bí ẩn. A Vietnamese female investigator in a dim records room studies an old unmarked photograph with a magnifying glass, shelves of worn case folders disappearing into shadow. Reflective glass layers her face with a deserted street. Sophisticated forensic mystery, restrained charcoal and pale amber. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"HỒ SƠ SỐ KHÔNG\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"CASE ZERO\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 20,
+      "slug": "ban-do-nhung-vi-sao",
+      "title": "Bản đồ những vì sao",
+      "originalTitle": "A Map of Stars",
+      "genre": "Phiêu lưu",
+      "destination": "frontend/public/art/posters/ban-do-nhung-vi-sao-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Bản đồ những vì sao\" (A Map of Stars), genre Phiêu lưu. A Vietnamese girl and her elderly grandfather carrying a small telescope climb toward a remote hilltop observatory under a magnificent star field. Intimate realistic relationship, weathered clothing, lantern light, immense mountain night landscape. Deep indigo and gentle gold, hopeful family adventure. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"BẢN ĐỒ NHỮNG VÌ SAO\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"A MAP OF STARS\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 21,
+      "slug": "bep-nho-yeu-thuong",
+      "title": "Bếp nhỏ yêu thương",
+      "originalTitle": "A Kitchen of Love",
+      "genre": "Hài hước",
+      "destination": "frontend/public/art/posters/bep-nho-yeu-thuong-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Bếp nhỏ yêu thương\" (A Kitchen of Love), genre Hài hước. A young Vietnamese chef with flour on his face and a worried but endearing smile in a small family restaurant kitchen, an elderly grandmother beside him pointing to a handwritten recipe book. Steam, fresh herbs, tactile ceramic bowls, charming photographic comedy, warm red and golden kitchen light. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"BẾP NHỎ YÊU THƯƠNG\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"A KITCHEN OF LOVE\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 22,
+      "slug": "mat-bao",
+      "title": "Mắt bão",
+      "originalTitle": "Eye of the Storm",
+      "genre": "Hành động",
+      "destination": "frontend/public/art/posters/mat-bao-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Mắt bão\" (Eye of the Storm), genre Hành động. A Vietnamese rescue worker in a soaked orange rain jacket braces against extreme wind beside a broken coastal bridge, the rescue team and vehicles behind amid crashing waves. Human resolve and immense storm scale, photographic action-thriller, slate blue, white spray, vivid safety orange. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"MẮT BÃO\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"EYE OF THE STORM\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 23,
+      "slug": "sac-mau-cua-gio",
+      "title": "Sắc màu của gió",
+      "originalTitle": "Colors of the Wind",
+      "genre": "Tài liệu",
+      "destination": "frontend/public/art/posters/sac-mau-cua-gio-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Sắc màu của gió\" (Colors of the Wind), genre Tài liệu. An elderly Vietnamese craftswoman weaving brightly dyed threads in a sunlit open workshop in a windy coastal region, expressive hands and intricate authentic textile details, long cloth moving in the breeze. Rich natural pigments, warm daylight, premium documentary photography. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"SẮC MÀU CỦA GIÓ\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"COLORS OF THE WIND\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 24,
+      "slug": "dieu-uoc-luc-nua-dem",
+      "title": "Điều ước lúc nửa đêm",
+      "originalTitle": "A Midnight Wish",
+      "genre": "Kỳ ảo",
+      "destination": "frontend/public/art/posters/dieu-uoc-luc-nua-dem-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Điều ước lúc nửa đêm\" (A Midnight Wish), genre Kỳ ảo. A Vietnamese adult woman cradles an antique brass clock in a quiet old room at midnight, a fleeting warm memory reflected in its glass face, blue moonlight and one warm bedside lamp. Romantic magical realism photographed like a live-action film, tactile brass, intimate emotion. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"ĐIỀU ƯỚC LÚC NỬA ĐÊM\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"A MIDNIGHT WISH\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 25,
+      "slug": "la-thu-tu-bien",
+      "title": "Lá thư từ biển",
+      "originalTitle": "Letters from the Sea",
+      "genre": "Tình cảm",
+      "destination": "frontend/public/art/posters/la-thu-tu-bien-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Lá thư từ biển\" (Letters from the Sea), genre Tình cảm. A Vietnamese young woman holding a sea-worn envelope on a windswept fishing-village pier, a young fisherman standing near a moored wooden boat, their eyes meeting across the frame. Photographic coastal romance, soft overcast glow, teal sea and warm skin, intimate atmosphere. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"LÁ THƯ TỪ BIỂN\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"LETTERS FROM THE SEA\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 26,
+      "slug": "ve-tinh-cuoi-cung",
+      "title": "Vệ tinh cuối cùng",
+      "originalTitle": "The Last Satellite",
+      "genre": "Khoa học viễn tưởng",
+      "destination": "frontend/public/art/posters/ve-tinh-cuoi-cung-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Vệ tinh cuối cùng\" (The Last Satellite), genre Khoa học viễn tưởng. A lone Vietnamese astronaut inside a battered orbital communications station looks toward a distant Earth through a broad window; an old headset and flickering practical console, ominous satellite machinery in silhouette. Photographic space thriller, realistic suit wear, cold blue and small warm lamps. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"VỆ TINH CUỐI CÙNG\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"THE LAST SATELLITE\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 27,
+      "slug": "khach-san-suong-mu",
+      "title": "Khách sạn sương mù",
+      "originalTitle": "The Mist Hotel",
+      "genre": "Kinh dị",
+      "destination": "frontend/public/art/posters/khach-san-suong-mu-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Khách sạn sương mù\" (The Mist Hotel), genre Kinh dị. A lone Vietnamese adult traveler with a suitcase enters the lobby of a grand weathered mountain hotel lost in thick fog. Antique mirrors reflect subtly inconsistent empty hallways. A haunted human face in foreground, atmospheric psychological horror, no gore, desaturated emerald and antique gold. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"KHÁCH SẠN SƯƠNG MÙ\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"THE MIST HOTEL\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 28,
+      "slug": "nhung-ke-mong-mo",
+      "title": "Những kẻ mộng mơ",
+      "originalTitle": "The Dreamers",
+      "genre": "Chính kịch",
+      "destination": "frontend/public/art/posters/nhung-ke-mong-mo-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Những kẻ mộng mơ\" (The Dreamers), genre Chính kịch. A young Vietnamese indie band on the roof of their battered touring van at a roadside stop, a worn guitar held by a thoughtful singer, a vast open road winding into evening hills. Natural faces, authentic clothes, textured 35mm road-movie photography, warm sunset and muted blue. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"NHỮNG KẺ MỘNG MƠ\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"THE DREAMERS\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 29,
+      "slug": "hanh-tinh-nho-cua-toi",
+      "title": "Hành tinh nhỏ của tôi",
+      "originalTitle": "My Little Planet",
+      "genre": "Hoạt hình",
+      "destination": "frontend/public/art/posters/hanh-tinh-nho-cua-toi-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Hành tinh nhỏ của tôi\" (My Little Planet), genre Hoạt hình. A small original gardening robot with weathered white ceramic panels carefully protects one living seedling on a tiny rocky planet beneath a breathtaking star field. Photorealistic handcrafted-model science-fiction family-film aesthetic, believable metal wear and plant texture, gentle expressive robot, cosmic blue and warm sunlight. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"HÀNH TINH NHỎ CỦA TÔI\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"MY LITTLE PLANET\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 30,
+      "slug": "lang-nghe-mua-dong",
+      "title": "Lặng nghe mùa đông",
+      "originalTitle": "Listen to Winter",
+      "genre": "Tình cảm",
+      "destination": "frontend/public/art/posters/lang-nghe-mua-dong-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Lặng nghe mùa đông\" (Listen to Winter), genre Tình cảm. A Vietnamese adult piano repairer and a Vietnamese music teacher meet in the doorway of a small snowy-town music shop, a warm lit piano behind glass, gentle snowflakes against wool coats. Quiet restrained romance, photoreal 35mm winter cinema, icy blue and golden indoor light. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"LẶNG NGHE MÙA ĐÔNG\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"LISTEN TO WINTER\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 31,
+      "slug": "duong-chan-troi-do",
+      "title": "Đường chân trời đỏ",
+      "originalTitle": "Red Horizon",
+      "genre": "Hành động",
+      "destination": "frontend/public/art/posters/duong-chan-troi-do-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Đường chân trời đỏ\" (Red Horizon), genre Hành động. A convoy of dusty off-road vehicles crosses a vast red desert under a threatening sky; a Vietnamese woman driver with a sun-weathered face and goggles dominates the foreground. Strong dynamic diagonals, tactile dust, harsh side light, convincing live-action survival thriller, burnt orange and deep blue. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"ĐƯỜNG CHÂN TRỜI ĐỎ\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"RED HORIZON\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 32,
+      "slug": "huong-vi-ky-uc",
+      "title": "Hương vị ký ức",
+      "originalTitle": "Taste of Memory",
+      "genre": "Chính kịch",
+      "destination": "frontend/public/art/posters/huong-vi-ky-uc-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Hương vị ký ức\" (Taste of Memory), genre Chính kịch. A Vietnamese mother and adult daughter prepare a meal together from a weathered family recipe notebook, an older family portrait softly visible behind them. Intimate expressive hands, food steam and real kitchen texture, warm natural side light, emotional cinematic family drama. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"HƯƠNG VỊ KÝ ỨC\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"TASTE OF MEMORY\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 33,
+      "slug": "hanh-trinh-vo-tan",
+      "title": "Hành trình vô tận",
+      "originalTitle": "The Endless Journey",
+      "genre": "Phiêu lưu",
+      "destination": "frontend/public/art/posters/hanh-trinh-vo-tan-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Hành trình vô tận\" (The Endless Journey), genre Phiêu lưu. A Vietnamese traveler with a scuffed backpack pauses at a mountain-road overlook with an immense landscape stretching toward distant sea and clouds. Thoughtful expressive portrait blended naturally into the wide journey scene, premium photographic adventure key art, atmospheric teal and sunrise gold. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"HÀNH TRÌNH VÔ TẬN\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"THE ENDLESS JOURNEY\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 34,
+      "slug": "bien-nien-anh-sang",
+      "title": "Biên niên ánh sáng",
+      "originalTitle": "Chronicles of Light",
+      "genre": "Kỳ ảo",
+      "destination": "frontend/public/art/posters/bien-nien-anh-sang-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Biên niên ánh sáng\" (Chronicles of Light), genre Kỳ ảo. Three young Vietnamese adults carry a single glowing flame through an ancient stone kingdom fading into a vast unnatural night. Their real faces and handmade clothing illuminated by fire, monumental weathered architecture and ash in air. Epic live-action fantasy realism, deep navy and luminous gold. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"BIÊN NIÊN ÁNH SÁNG\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"CHRONICLES OF LIGHT\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 35,
+      "slug": "sau-man-mua",
+      "title": "Sau màn mưa",
+      "originalTitle": "After the Rain",
+      "genre": "Tình cảm",
+      "destination": "frontend/public/art/posters/sau-man-mua-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Sau màn mưa\" (After the Rain), genre Tình cảm. Vietnamese neighbors gather under the covered corridor of a weathered apartment building after heavy rain, a young man and woman in foreground exchange an understated hopeful glance. Water on railings, balconies with houseplants, soft light returning after storm. Realistic intimate ensemble romance, gentle green and warm light. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"SAU MÀN MƯA\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"AFTER THE RAIN\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 36,
+      "slug": "tram-nghien-cuu-so-7",
+      "title": "Trạm nghiên cứu số 7",
+      "originalTitle": "Station Seven",
+      "genre": "Khoa học viễn tưởng",
+      "destination": "frontend/public/art/posters/tram-nghien-cuu-so-7-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Trạm nghiên cứu số 7\" (Station Seven), genre Khoa học viễn tưởng. A Vietnamese scientist in a heavy practical parka stands outside remote research station number seven in an icy mountain landscape as mysterious bands of light appear overhead. Serious expressive portrait, weather-beaten antennae and warm station windows, photoreal speculative thriller, cobalt blue and warm orange. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"TRẠM NGHIÊN CỨU SỐ 7\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"STATION SEVEN\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 37,
+      "slug": "tham-tu-pho-co",
+      "title": "Thám tử phố cổ",
+      "originalTitle": "Old Quarter Detective",
+      "genre": "Bí ẩn",
+      "destination": "frontend/public/art/posters/tham-tu-pho-co-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Thám tử phố cổ\" (Old Quarter Detective), genre Bí ẩn. A Vietnamese woman detective in her thirties walks down a narrow lantern-lit old Vietnamese town alley, studying a worn notebook, textured ochre walls and wooden shutters disappearing into mist. Human close-up layered with the alley, elegant grounded detective mystery, amber and charcoal. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"THÁM TỬ PHỐ CỔ\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"OLD QUARTER DETECTIVE\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 38,
+      "slug": "nha-minh-co-khach",
+      "title": "Nhà mình có khách",
+      "originalTitle": "Guests at Home",
+      "genre": "Hài hước",
+      "destination": "frontend/public/art/posters/nha-minh-co-khach-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Nhà mình có khách\" (Guests at Home), genre Hài hước. An exuberant multigenerational Vietnamese family squeezed into a small welcoming home around an unexpected visitor at the door, playful natural reactions, luggage, plants and a home-cooked meal. Authentic live-action ensemble comedy photography, tactile domestic detail, sunny warm cream and red. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"NHÀ MÌNH CÓ KHÁCH\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"GUESTS AT HOME\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 39,
+      "slug": "nhung-mua-xanh",
+      "title": "Những mùa xanh",
+      "originalTitle": "Seasons of Green",
+      "genre": "Tài liệu",
+      "destination": "frontend/public/art/posters/nhung-mua-xanh-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Những mùa xanh\" (Seasons of Green), genre Tài liệu. A Vietnamese forest ranger on a misty mountain trail amid lush old-growth forest, morning rays across ferns and a reflective stream, birds lifting over the canopy. A beautifully observed photographic nature-documentary poster, rich emerald, natural texture, tranquil golden light. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"NHỮNG MÙA XANH\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"SEASONS OF GREEN\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    },
+    {
+      "n": 40,
+      "slug": "cuoc-phieu-luu-cua-may",
+      "title": "Cuộc phiêu lưu của Mây",
+      "originalTitle": "May’s Adventure",
+      "genre": "Hoạt hình",
+      "destination": "frontend/public/art/posters/cuoc-phieu-luu-cua-may-v1.png",
+      "prompt": "Use case: ads-marketing. Create ONE finished cinematic theatrical movie poster, portrait 2:3, full-bleed artwork, not a mockup. Original fictional Vietnamese film \"Cuộc phiêu lưu của Mây\" (May’s Adventure), genre Hoạt hình. A Vietnamese girl called Mây in practical adventure clothes and an original small brass mechanical bird gaze toward a magnificent floating city beyond clouds. Cinematic miniature and live-action family fantasy with photoreal skin, textured cloth, real-feeling metal feathers and huge natural clouds, bright hopeful sky blue and gold. Premium photorealistic cinematic key art in the same refined collection as a live-action space-drama poster: compelling expressive subject, tactile materials and authentic faces, organic 35mm grain, coherent cinematic lighting, atmospheric depth, elegant strong composition readable on a small movie card, premium color grading. Do not make flat vector art, generic gradients, glossy videogame graphics, or a collage grid. Typography: the ONLY text must be the exact Vietnamese title \"CUỘC PHIÊU LƯU CỦA MÂY\" in large beautifully composed condensed off-white movie typography in the lower quarter, preserving every Vietnamese accent; below it small widely tracked \"MAY’S ADVENTURE\". Wrap the Vietnamese title naturally into 2-3 balanced lines as needed, maintain a 7% safe margin, avoid covering the main face. No additional copy, no actor names, no credits, no dates, no logos, no watermarks. All people and designs original, no real celebrity or existing film franchise."
+    }
+  ]
+}

@@ -1,2 +1,7 @@
 # Local course extracts and screenshots are reference material, not project source.
 /docs/java-course-review/
+
+# Windows folder metadata
+desktop.ini
+Thumbs.db
+*.tsbuildinfo

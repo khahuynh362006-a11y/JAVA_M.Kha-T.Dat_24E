@@ -1,12 +1,21 @@
 # JAVA_M.Kha-T.Dat_24E
-Đồ án môn java(GV:MinhTuan)
 
-## Hệ thống quản lý rạp chiếu phim
+Đồ án môn Java (GV: Minh Tuấn).
 
-Mã nguồn và hướng dẫn chạy nằm trong [cinema-management](cinema-management/README.md).
+## Project hiện tại: CineVerse
 
-- Kha phụ trách backend/CSDL/API trên nhánh `backend/kha`.
-- Đạt phụ trách frontend trên nhánh `frontend/dat`.
-- `main` chứa phiên bản đã tích hợp.
+Mã nguồn mới nhất từ project local nằm trong [CineVerse](CineVerse/README.md).
 
-Đọc [hợp đồng API](cinema-management/docs/api.md) và [checklist tích hợp](cinema-management/docs/integration-checklist.md) trước khi làm giao diện. Nhánh frontend cần cập nhật từ `main` để nhận nền tảng backend và tài liệu mới.
+- [Hướng dẫn cài đặt và chạy](CineVerse/README.md)
+- [Hướng dẫn nộp bài](CineVerse/HUONG-DAN-NOP-BAI.md)
+- Backend Java/Spring Boot: `CineVerse/backend/`
+- Giao diện khách hàng React: `CineVerse/frontend/`
+- Giao diện quản trị: `CineVerse/admin/`
+
+Các cấu hình riêng `.env`, dữ liệu runtime, thư viện cài đặt và file build không được đưa lên Git. Cài đặt theo README của CineVerse.
+
+## Phiên bản trước
+
+Project [cinema-management](cinema-management/README.md) được giữ để tham khảo và bảo toàn phần đã tích hợp trước đây.
+
+Kha phụ trách nhánh `backend/kha`, Đạt phụ trách `frontend/dat`; `main` chứa bản đã tích hợp.

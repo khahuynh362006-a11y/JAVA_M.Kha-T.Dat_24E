@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+!.env.test.example
+.tools/
+.runtime/
+backend/target/
+frontend/node_modules/
+frontend/dist/
+admin/dist/
+admin/node_modules/
+frontend/test-results/
+frontend/playwright-report/
+demo-media/*.mp4
+uploads/
+*.log
+*.pid

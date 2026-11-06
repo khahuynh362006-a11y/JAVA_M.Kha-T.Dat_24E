@@ -1,0 +1,12 @@
+.git
+.env
+.env.*
+.runtime
+.tools
+**/node_modules
+**/dist
+**/target
+**/test-results
+**/playwright-report
+uploads
+demo-media

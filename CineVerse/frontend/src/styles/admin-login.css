@@ -1,0 +1,100 @@
+.admin-login {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: var(--bg);
+}
+.admin-login-story {
+  padding: 48px 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background:
+    linear-gradient(90deg, #08090de8, #08090d66),
+    url("/art/hero-horizon.png") center/cover;
+}
+.admin-login-story h1 {
+  font-size: clamp(32px, 3.8vw, 58px);
+  line-height: 1.25;
+  letter-spacing: -0.05em;
+  margin: 20px 0;
+}
+.admin-login-story p {
+  max-width: 400px;
+  color: #b8bfcc;
+  font-size: 14px;
+}
+.admin-login-story > small {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+}
+.admin-login-form {
+  align-self: center;
+  width: min(460px, 100%);
+  padding: 48px;
+  margin: auto;
+}
+.admin-login-form > .eyebrow {
+  display: block;
+  margin-top: 24px;
+}
+.admin-login-form h2 {
+  font-size: 30px;
+  margin: 12px 0;
+}
+.admin-login-form > p {
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+.admin-login-form label {
+  display: block;
+  margin: 20px 0;
+  font-size: 13px;
+}
+.admin-login-form input {
+  display: block;
+  width: 100%;
+  margin-top: 9px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  color: var(--text);
+}
+.admin-login-form .password-input {
+  position: relative;
+}
+.admin-login-form .password-input input {
+  padding-right: 48px;
+}
+.admin-login-form .password-input button {
+  position: absolute;
+  right: 9px;
+  top: 8px;
+}
+.admin-login-form form > .btn {
+  width: 100%;
+  margin: 12px 0 24px;
+}
+@media (max-width: 760px) {
+  .admin-login {
+    grid-template-columns: 1fr;
+  }
+  .admin-login-story {
+    min-height: 280px;
+    padding: 28px;
+  }
+  .admin-login-story h1 {
+    font-size: 30px;
+    margin-top: 12px;
+  }
+  .admin-login-story p,
+  .admin-login-story > small {
+    display: none;
+  }
+  .admin-login-form {
+    padding: 30px 24px;
+  }
+}

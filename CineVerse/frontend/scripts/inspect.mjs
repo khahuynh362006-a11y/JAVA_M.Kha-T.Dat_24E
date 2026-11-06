@@ -1,0 +1,10 @@
+import {chromium} from 'playwright';
+import fs from 'node:fs';
+const browser=await chromium.launch({headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:900}});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error'&&!m.text().includes('401'))errors.push(m.text());});
+await page.goto('http://localhost:5173/');await page.getByRole('heading',{level:1}).waitFor();await page.locator('.movie-card').first().waitFor();await page.waitForTimeout(900);fs.mkdirSync('../docs/screenshots',{recursive:true});await page.screenshot({path:'../docs/screenshots/home-desktop.png'});
+console.log(JSON.stringify({title:await page.title(),heading:await page.locator('h1').innerText(),cards:await page.locator('.movie-card').count(),overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),errors},null,2));
+await page.setViewportSize({width:390,height:844});await page.screenshot({path:'../docs/screenshots/home-mobile.png'});console.log('mobile overflow:',await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth));
+await page.goto('http://localhost:5173/phim/phia-ben-kia-chan-troi');await page.locator('.detail-copy h1').waitFor();await page.screenshot({path:'../docs/screenshots/detail-mobile.png'});console.log('detail overflow:',await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth));
+await browser.close();
