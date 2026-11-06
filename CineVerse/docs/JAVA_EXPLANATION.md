@@ -24,3 +24,4 @@ Scheduler trả ghế quá hạn và retry outbox. Payment callback có thể đ
 
 ## Kiểm thử
 JUnit kiểm giá, quyền, hết hạn, phát vé lặp, late payment, token và gateway. H2 giúp kiểm thử nhanh nhưng không thay thế MySQL. Playwright dùng backend và MySQL thật để kiểm race ghế, CRUD admin, checkout và SMTP. Không khẳng định hệ thống phân tán đã được kiểm chứng chỉ từ một instance local.
+

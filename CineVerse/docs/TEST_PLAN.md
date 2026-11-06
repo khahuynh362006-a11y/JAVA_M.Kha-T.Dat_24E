@@ -97,3 +97,22 @@ Sau bổ sung STARTTLS required và kiểm tên máy chủ TLS: Maven package đ
 Lượt E2E đầu sau gián đoạn bị ECONNREFUSED vì dịch vụ đã dừng; không tính là đạt. Lượt tiếp theo đạt 10/11, trace xác định refresh HTTP 429 do dùng cùng mức 20/phút như đăng nhập. Đã tách refresh 120/phút, giữ đăng nhập 20/phút và thêm hai unit test kiểm cả giới hạn và sự độc lập giữa endpoint; sau đó chạy lại toàn bộ.
 
 Chưa chạy MoMo Sandbox end-to-end, SMTP Internet, Docker Compose, load test, kiểm chứng nhiều instance hoặc production. Test H2 không thay thế mọi hành vi khóa MySQL; race test hai user trên MySQL chỉ kiểm trường hợp cạnh tranh cụ thể. Không có đo SLA/throughput.
+
+# Xóa vĩnh viễn — yêu cầu bổ sung 06/11/2026
+
+Hành vi mới thay thế ẩn/ngừng hoạt động trên DELETE. Kiểm `count(*)=0` cho rạp, phòng, ghế và suất con sau xóa rạp; repository không còn phim sau xóa; liên kết thể loại được xóa, quốc gia đang dùng bị chặn; đơn đã hủy vẫn chặn xóa phim/rạp đúng liên kết, giữ nguyên booking và đối tượng gốc. Audit vẫn được lưu.
+
+- Java: 83/83 đạt, không bỏ qua. Lượt đầu sandbox bị lỗi Mockito attach pipe; chạy ngoài sandbox. Lượt sau có 1 fixture sai vì lấy phim ID 1 thay vì phim thật của suất được chọn; sửa fixture truy vấn liên kết thực và chạy lại toàn bộ đạt.
+- Package bị khóa JAR bởi backend đang chạy sau khi test đã đạt. Dừng riêng backend, đóng gói với `-DskipTests` thành công (không đổi source sau lượt 83/83), khởi động lại và `/actuator/health` UP.
+- Playwright `e2e/admin-empty-response.spec.ts`: 2/2 đạt trên backend mới/MariaDB XAMPP. Rạp mới tạo để thử xóa không còn trong danh sách sau xác nhận và tải lại; không xóa dữ liệu người dùng có sẵn. Cleanup chấp nhận 404 của rạp đã bị xóa thật.
+- Lint frontend và build frontend/admin đạt. Giữ FK, không vô hiệu hóa ràng buộc, không sửa schema. Chưa chạy stress test concurrent delete; FK và transaction vẫn rollback nếu có liên kết phát sinh.
+
+# Hồi quy lỗi xóa dữ liệu — 06/11/2026 (hành vi trước yêu cầu xóa vĩnh viễn)
+
+- Nguyên nhân: controller trả HTTP 200 không có body sau khi cập nhật thành công; HTTP client gọi `Response.json()` nên báo lỗi, không đóng modal hoặc làm mới danh sách.
+- Sửa trong `frontend/src/lib/api.ts`: đọc body một lần, chấp nhận body rỗng hoặc chỉ có khoảng trắng và 204; tiếp tục giải mã JSON có nội dung, báo `INVALID_RESPONSE` cho JSON sai và giữ nguyên lỗi nghiệp vụ từ API.
+- `npx playwright test e2e/admin-empty-response.spec.ts`: **2/2 đạt**. Bài thứ nhất kiểm 6 trường hợp (200 rỗng, khoảng trắng, 204, JSON hợp lệ, JSON sai, lỗi nghiệp vụ 409). Bài thứ hai đăng nhập admin, tạo rạp kiểm thử riêng, bấm nút xóa thực tế, kiểm modal đóng/thông báo thành công/trạng thái ngừng hoạt động và tải lại vẫn đúng. Không sửa hoặc xóa rạp có sẵn; rạp kiểm thử còn ở trạng thái không hoạt động theo chính sách lưu lịch sử.
+- Lượt đầu của bài kiểm thử không truy cập được module do admin có Vite root riêng; sửa đường dẫn lấy từ module thực được tải rồi chạy lại đạt. Đây là lỗi bài kiểm thử, không phải lỗi nghiệp vụ.
+- `npm run lint` frontend, `npm run build` frontend và admin: đạt. Build khách có cảnh báo chú thích dependency zod từ Rollup, không có lỗi build. Không thay đổi Java hoặc cấu trúc CSDL.
+- Rạp/phòng/suất có đơn giữ ghế hoặc vé còn hiệu lực vẫn bị chặn ngừng hoạt động theo kiểm tra hiện hữu; không bỏ kiểm tra này để xóa lịch sử bán vé.
+

@@ -19,3 +19,4 @@ Chạy scripts/setup-media.ps1 để tải từ nguồn công khai trên. MP4 đ
 Poster và backdrop SVG do scripts/generate-art.mjs tạo từ hình học, không sao chép poster thương mại. Hero AI xem ASSETS.md. Font Be Vietnam Pro được đóng gói qua @fontsource; giữ license của package. Các thư viện icon sử dụng license đi kèm dependency.
 
 Poster mẫu `poster-horizon-realistic-v1.png` cho “Phía bên kia chân trời” được tạo mới bằng imagegen cho dự án ngày 05/11/2026, nhân vật và bối cảnh hư cấu; không lấy từ phim thương mại. Nguồn và prompt trong ASSETS.md. Đây là hình minh họa AI, không phải tài liệu quảng bá của một bộ phim đang phát hành thật.
+

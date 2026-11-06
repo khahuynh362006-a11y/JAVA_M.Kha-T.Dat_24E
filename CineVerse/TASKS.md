@@ -39,3 +39,10 @@ Yêu cầu mới: bỏ xác thực email khi đăng ký. Đã bỏ gate verified
 - [ ] Production/load test/backup nhiều instance: ngoài phạm vi demo local.
 
 Bằng chứng cuối xem docs/TEST_PLAN.md. Media/license xem docs/MEDIA.md; artwork xem docs/ASSETS.md. Không có hoàn tiền tự động; lịch seed có hạn; không kết nối rạp thương mại.
+
+- [x] 06/11/2026 yêu cầu tiếp theo: DELETE admin xóa vĩnh viễn CSDL, dọn dữ liệu con trong transaction và chặn lịch sử đặt vé/thanh toán. Thay thế hành vi ẩn/ngừng hoạt động của nút xóa trước đó. 83/83 Java, 2/2 Playwright mới, lint và build hai website đạt; backend đã đóng gói và khởi động lại healthy. Không xóa tự động dữ liệu có sẵn.
+
+- [x] 06/11/2026: sửa HTTP client dùng chung để chấp nhận phản hồi thành công HTTP 200 rỗng/204, tránh lỗi JSON sau thao tác xóa hoặc cập nhật void. Làm rõ xác nhận ngừng hoạt động rạp/phòng/suất, giữ kiểm tra vé đang hiệu lực. Hồi quy Playwright mới 2/2 đạt; lint frontend và build hai website đạt.
+
+- [x] Ngày 06/11/2026: tạo báo cáo Word 33 trang theo PDF yêu cầu học phần, điền trường/lớp/hai sinh viên/giảng viên, chèn 19 ảnh chụp thật và 3 sơ đồ. Đã cập nhật mục lục bằng Word và xem bản render toàn bộ 33 trang. Khoa, số nhóm và phân công còn để bổ sung. Web/admin giữ chạy ở 5173/5174.
+

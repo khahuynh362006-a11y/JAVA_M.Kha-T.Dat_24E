@@ -34,3 +34,4 @@ Chạy `pwsh -File scripts/setup-email-web.ps1`; mở URL trong .runtime/email-s
 Tạo tài khoản Brevo, xác minh sender và lấy SMTP Login cùng SMTP key (không phải API key). Nhập ba trường trên trang cấu hình. Công cụ dùng smtp-relay.brevo.com:587 với STARTTLS, gửi thư thử tới chính sender, lưu config rồi restart backend. Tài khoản cần được Brevo cho phép gửi; việc tạo tài khoản hoặc lấy key không tự đảm bảo quyền gửi/deliverability. Nếu dùng sender Gmail, Brevo có thể thay miền người gửi sang brevosend.com; tên miền riêng đã xác thực phù hợp cho vận hành thật.
 
 Nguồn: [SMTP Brevo](https://help.brevo.com/hc/en-us/articles/7924908994450-Send-transactional-emails-using-Brevo-SMTP), [thay miền sender](https://help.brevo.com/hc/en-us/articles/16045394674066-Troubleshooting-Domain-authentication). Chưa có credential Brevo thật, chưa xác minh gửi tới Gmail. Không gọi trang cấu hình sẵn sàng là email đã được kích hoạt.
+

@@ -226,7 +226,7 @@ test("admin creates, publishes, updates and hides a database movie", async ({ pa
     .fill("Phim E2E đã cập nhật");
   await page.getByRole("button", { name: "Lưu phim", exact: true }).click();
   await expect(page.getByRole("dialog")).toBeHidden();
-  await page.getByRole("button", { name: /Ẩn hoặc xóa/ }).click();
+  await page.getByRole("button", { name: /Xóa vĩnh viễn/ }).click();
   await page.getByRole("button", { name: "Xác nhận", exact: true }).click();
   await expect(page.getByRole("dialog")).toBeHidden();
   await expect(page.getByText("Chưa có dữ liệu phù hợp")).toBeVisible();

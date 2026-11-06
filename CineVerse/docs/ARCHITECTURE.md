@@ -1,5 +1,11 @@
 # Kiến trúc CineVerse bán vé xem phim
 
+## Xóa dữ liệu quản trị (cập nhật 06/11/2026)
+
+DELETE từ admin xóa vĩnh viễn bản ghi trong CSDL, không còn đổi cờ ẩn. Xóa rạp/phòng kèm phòng, ghế, suất chưa có đơn; xóa phim kèm liên kết thể loại, yêu thích, đánh giá/báo cáo, lượt xem, lịch sử xem, banner, mùa/tập và suất chưa có đơn. Xóa mùa kèm tập và lịch sử xem liên quan; xóa thể loại gỡ liên kết phim. Mỗi thao tác nằm trong một transaction, dùng whitelist bảng và ghi audit. Không thay đổi schema nên không cần migration mới.
+
+Không cascade xóa lịch sử đặt vé hoặc thanh toán: mọi trạng thái đơn kể cả đã hủy/hết hạn đều chặn xóa rạp/phòng/suất/phim liên quan; gói đã có payment bị chặn. Quốc gia đang được phim sử dụng phải được thay ở phim trước khi xóa vì country_id bắt buộc. Giữ các FK làm lớp bảo vệ cuối và rollback nếu phát sinh liên kết đồng thời. Admin có thể sửa trạng thái Hoạt động/Nháp riêng để ngừng bán khi không xóa được. Không tự xóa các bản ghi người dùng đã có; chỉ xóa bản ghi được chọn và xác nhận trên giao diện. Tệp media dùng chung không bị xóa theo bản ghi phim.
+
 ## Ranh giới hệ thống
 
 Modular monolith Java 21 / Spring Boot 3.5.16; hai ứng dụng React TypeScript / Vite: khách `frontend` (5173), quản trị `admin` (5174). Cùng API 8080 và MariaDB 10.4.32 của XAMPP (3306). Flyway quản lý 5 migrations / 32 bảng gồm lịch sử Flyway. MySQL 8.4 vẫn được hỗ trợ cho Compose; H2 chỉ dành cho JUnit. Java quyết định giá, quyền truy cập, giữ ghế và phát hành vé; React thể hiện trạng thái trả về từ API.

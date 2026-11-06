@@ -179,3 +179,4 @@ Dashboard truy vấn DB; giao dịch simulation được tách khỏi doanh thu 
 ## 45. Phát triển tiếp ưu tiên gì?
 
 Hoàn tiền và quy trình hỗ trợ, lịch đối tác, load test cạnh tranh, backup/restore và quản trị nhiều instance.
+

@@ -15,3 +15,4 @@ Chuẩn bị: chạy start-local.ps1; dùng show-demo.ps1 xem mật khẩu local
 Nếu ghế bị giữ, chọn ghế khác; không sửa DB để ép thành công. Nếu email chưa tới, xem outbox/last_error. Nếu không có lịch, admin tạo suất tương lai. Không trình diễn giao dịch tiền thật.
 
 Nhấn mạnh: JUnit dùng H2; kiểm thử browser mới dùng MariaDB XAMPP thật. 80 Java test đạt, hai trang build/lint đạt và kiểm thử độc lập phiên/cập nhật dữ liệu đạt. payOS cần khóa riêng và dùng tiền thật, chưa có end-to-end ngân hàng; Docker chưa được chạy. Thanh toán đến muộn không phát hành vé, chuyển nhân viên hỗ trợ.
+

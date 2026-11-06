@@ -28,3 +28,4 @@ Không cần image generation để tái chạy ứng dụng vì asset đã nằ
 - Asset: `frontend/public/art/poster-horizon-realistic-v1.png`, 1024 × 1536 (2:3). Tạo bằng công cụ imagegen tích hợp cho phim hư cấu của CineVerse, không phải poster hoặc diễn viên từ phim thương mại. Không tải ảnh Internet cho mẫu này.
 - Prompt đầy đủ: [poster-horizon-realistic-v1.txt](prompts/poster-horizon-realistic-v1.txt). Phong cách ảnh quay phim 35mm, nữ phi hành gia với chất liệu/da chân thật, bờ biển hành tinh lạ và tiêu đề Việt có dấu.
 - Thay thử một phim có slug `phia-ben-kia-chan-troi`; giữ nguyên poster SVG gốc để có thể quay lại. Các poster khác không đổi. Seed/generator giữ đường dẫn PNG khi tạo catalog mới; dữ liệu đang chạy được cập nhật qua API admin có kiểm quyền và audit.
+

@@ -67,6 +67,6 @@ public class CinemaAdminController {
     @DeleteMapping({"/cinemas/{id}", "/auditoriums/{id}", "/showtimes/{id}"})
     public void close(jakarta.servlet.http.HttpServletRequest request, @PathVariable Long id) {
         String[] parts = request.getRequestURI().split("/");
-        service.deactivate(parts[parts.length - 2], id, current.id());
+        service.delete(parts[parts.length - 2], id, current.id());
     }
 }

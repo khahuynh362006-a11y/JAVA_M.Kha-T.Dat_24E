@@ -37,12 +37,43 @@ docs/             Báo cáo tiếng Việt, ERD, UML, demo, kiểm thử
 
 ## Khởi động trên Windows / XAMPP
 
-Máy hiện tại đã chuyển dữ liệu sang XAMPP và cấu hình .env. Chạy:
+### Cài mới từ GitHub (máy giảng viên)
+
+Cần **JDK 21**, **Node.js 22.12+ hoặc 24**, **PowerShell 7** (`pwsh`), **Git**, **XAMPP** và **Mailpit**. Mở PowerShell 7; Internet cần cho lần tải thư viện đầu. Không cần chạy Apache. Nếu Windows báo không nhận `pwsh`, cài PowerShell 7 và mở cửa sổ terminal mới.
+
+```powershell
+git clone https://github.com/khahuynh362006-a11y/JAVA_M.Kha-T.Dat_24E.git
+cd JAVA_M.Kha-T.Dat_24E/CineVerse
+pwsh -File scripts/setup-env.ps1
+notepad .env
+```
+
+Trong `.env`, đặt `XAMPP_ROOT=C:/xampp` (đổi theo thư mục cài thực tế), giữ `DB_PROVIDER=xampp`, cổng MariaDB `3306`, URL khách/admin `5173/5174`. Script đã sinh `DB_PASSWORD`, `JWT_SECRET`, `DEMO_PASSWORD` riêng; không xóa các giá trị này. Không đưa `.env` lên Git.
+
+Với database `cineverse` **chưa tồn tại**, chạy lần đầu:
+
+```powershell
+pwsh -File scripts/setup-xampp-db.ps1 -XamppRoot 'C:/xampp'
+pwsh -File scripts/setup-media.ps1
+npm.cmd --prefix frontend ci
+pwsh -File scripts/start-local.ps1 -MailpitExe 'C:/tools/mailpit.exe'
+pwsh -File scripts/show-demo.ps1
+```
+
+Đổi `C:/tools/mailpit.exe` theo nơi bạn cài Mailpit. Nếu root XAMPP có mật khẩu, thêm `-PromptRootPassword` vào lệnh setup DB. Script DB từ chối ghi đè dữ liệu đã tồn tại. Flyway tự chạy SQL trong `backend/src/main/resources/db/migration`; **không nhập SQL thủ công trước**. Profile `dev` tự tạo phim, rạp, ghế, suất chiếu và tài khoản mẫu; không cần bản dump CSDL của sinh viên. `start-local` build backend và hai trang trước khi chạy, lần đầu có thể mất vài phút.
+
+Mở **khách** [localhost:5173](http://localhost:5173), **admin** [localhost:5174](http://localhost:5174). Đăng nhập admin bằng `admin@cineverse.local`, khách bằng `free@cineverse.local`; lấy mật khẩu máy mới từ `show-demo.ps1`. Mailpit xem tại [localhost:8025](http://localhost:8025). Nếu không có lịch chiếu sau nhiều ngày, tạo suất mới trong admin.
+
+### Những lần chạy sau
+
+Từ thư mục `CineVerse`, giữ `.env` và CSDL đã tạo. Chạy:
 
 ```powershell
 pwsh -File scripts/start-local.ps1
 pwsh -File scripts/show-demo.ps1
 ```
+
+Nếu Mailpit ở vị trí khác mặc định, vẫn truyền `-MailpitExe 'C:/tools/mailpit.exe'`. Dừng dịch vụ dự án bằng `pwsh -File scripts/stop-local.ps1`. Sau sửa source, dừng riêng backend trước để tránh Windows khóa JAR: `pwsh -File scripts/stop-local.ps1 -Services backend`, rồi chạy `start-local.ps1` để build lại. Không xóa CSDL để cập nhật mã nguồn.
 
 Script dùng XAMPP 3306, kiểm thử/build Java và cả hai website, sau đó mở dịch vụ nền ẩn. -SkipBuild chỉ dùng khi bản hiện tại đã build. Cần PowerShell 7, JDK 21, Node 22.12+ hoặc 24 và Mailpit; truyền -MailpitExe nếu đổi đường dẫn. Không cần Apache để chạy React/Java. stop-local.ps1 không dừng XAMPP dùng chung hoặc xóa CSDL.
 
@@ -78,10 +109,11 @@ Compose gồm MySQL 8.4, backend, hai Nginx/React (khách + admin) và Mailpit, 
 - Thanh toán đến sau khi giữ ghế hết hạn được ghi `PAYMENT_REVIEW`, không lấy ghế khách khác.
 - Vé của tôi, QR, in vé; admin soát vé dùng một lần.
 - Admin CRUD phim, danh mục, rạp, phòng, ghế, suất chiếu; xem đơn/vé/giao dịch; kiểm duyệt, thông báo, email/audit logs, CSV và thống kê từ DB.
+- Nút xóa admin xóa vĩnh viễn bản ghi CSDL và dữ liệu con trong transaction. Dữ liệu có lịch sử đặt vé/thanh toán hoặc quốc gia đang dùng sẽ bị chặn kèm lý do; có thể đổi trạng thái Hoạt động/Nháp để ngừng hiển thị riêng.
 
 ## Thanh toán và email
 
-**Phương thức hiện tại là payOS online**, đã viết create link, kiểm chữ ký, webhook, query và phát vé idempotent. .env.example dùng PAYMENT_MODE=payos, PAYOS_ENABLED=false; chưa nhập khóa merchant nên checkout báo chưa kết nối, không tạo giao dịch và không chuyển sang mô phỏng.
+**Phương thức hiện tại là payOS online**, đã viết create link, kiểm chữ ký, webhook, query và phát vé idempotent. Bản Git không chứa khóa merchant: `.env.example` dùng `PAYMENT_MODE=payos`, `PAYOS_ENABLED=false`; trên máy cài mới checkout báo chưa kết nối đến khi nhập bộ khóa riêng, không tự chuyển sang mô phỏng.
 
 **payOS không có Sandbox; thanh toán dùng tiền ngân hàng thật.** Kết nối tại máy bằng `pwsh -File scripts/setup-payos.ps1` sau khi chủ tài khoản xác minh/liên kết ngân hàng và lấy ba khóa riêng. Không gửi khóa vào chat. Xem [PAYOS_SETUP](docs/PAYOS_SETUP.md) và [tài liệu chính thức](https://payos.vn/docs/moi-truong-test/). Chưa thực hiện giao dịch ngân hàng end-to-end.
 

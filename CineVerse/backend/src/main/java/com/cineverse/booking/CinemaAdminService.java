@@ -219,6 +219,58 @@ public class CinemaAdminService {
         audit.log(actor, "CINEMA_RESOURCE_CLOSE", resource, id, "Ngừng hoạt động");
     }
 
+    public void delete(String resource, Long id, Long actor) {
+        String table =
+                switch (resource) {
+                    case "cinemas", "auditoriums", "showtimes" -> resource;
+                    default -> throw ApiException.missing();
+                };
+        if (db.queryForList("select id from " + table + " where id=? for update", Long.class, id)
+                .isEmpty()) throw ApiException.missing();
+        String condition =
+                switch (resource) {
+                    case "cinemas" -> "a.cinema_id=?";
+                    case "auditoriums" -> "a.id=?";
+                    default -> "s.id=?";
+                };
+        var showtimes =
+                db.queryForList(
+                        "select s.id from showtimes s join auditoriums a on a.id=s.auditorium_id"
+                            + " where "
+                                + condition
+                                + " order by s.id for update",
+                        Long.class,
+                        id);
+        // Keep every order, including expired/cancelled orders, available for reconciliation.
+        for (Long showtime : showtimes) {
+            if (db.queryForObject(
+                            "select count(*) from bookings where showtime_id=?",
+                            Long.class,
+                            showtime)
+                    > 0)
+                throw ApiException.bad(
+                        "Không thể xóa vĩnh viễn vì có lịch sử đặt vé liên quan. Hãy bỏ chọn Hoạt"
+                            + " động nếu muốn ngừng bán vé.");
+        }
+        for (Long showtime : showtimes) db.update("delete from showtimes where id=?", showtime);
+        if (!resource.equals("showtimes")) {
+            var rooms =
+                    resource.equals("cinemas")
+                            ? db.queryForList(
+                                    "select id from auditoriums where cinema_id=? order by id for"
+                                        + " update",
+                                    Long.class,
+                                    id)
+                            : List.of(id);
+            for (Long room : rooms) {
+                db.update("delete from seats where auditorium_id=?", room);
+                db.update("delete from auditoriums where id=?", room);
+            }
+            if (resource.equals("cinemas")) db.update("delete from cinemas where id=?", id);
+        }
+        audit.log(actor, "CINEMA_RESOURCE_DELETE", resource, id, "Xóa vĩnh viễn");
+    }
+
     private long insert(String sql, Object... args) {
         KeyHolder key = new GeneratedKeyHolder();
         db.update(

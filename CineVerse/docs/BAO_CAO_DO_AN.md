@@ -105,3 +105,4 @@ README có lệnh setup/start/stop và tài khoản demo. Secret sinh ngẫu nhi
 ## 26. Hạn chế và hướng phát triển
 
 Một instance; rate limit và token trailer trong bộ nhớ; danh sách vé/CSV có giới hạn. Cần thêm hoàn tiền, khuyến mãi, combo, đối tác rạp, quan sát hệ thống, backup/restore và load test trước vận hành thật. Tài liệu UML, Java, kịch bản demo và hỏi đáp đi kèm giúp bảo vệ thiết kế hiện có, không hứa chức năng chưa thực hiện.
+

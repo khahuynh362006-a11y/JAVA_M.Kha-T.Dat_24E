@@ -47,3 +47,4 @@ JUnit kiểm tra HMAC, callback giả mạo, sai số tiền, idempotency và fu
 Đã bổ sung test HTTP adapter (mock transport, không gọi MoMo) cho request captureWallet, chữ ký/giá server, binding partner/order/request, chống URL Production/ngoài Sandbox, merchant rejection, timeout và query. Merchant từ chối chắc chắn khi create sẽ ghi FAILED và trả ghế; lỗi mạng chưa rõ giữ PENDING để đối soát, không tạo giao dịch thứ hai. Log lần build mới: .runtime/logs/momo-sandbox-build.log. Bộ test browser vẫn dùng simulation khi chưa có khóa merchant; không gọi đó là kiểm thử MoMo Sandbox thực tế.
 
 Tài liệu chính thức: [MoMo payment APIs](https://developers.momo.vn/v3/docs/payment/api/wallet/onetime/) và [query](https://developers.momo.vn/v3/docs/payment/api/payment-api/query/).
+

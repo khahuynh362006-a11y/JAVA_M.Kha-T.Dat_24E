@@ -80,7 +80,18 @@ export async function api<T>(
     );
   }
   if (res.status === 204) return undefined as T;
-  return res.json() as Promise<T>;
+  // Spring controllers returning void may respond with 200 and an empty body.
+  const body = await res.text();
+  if (!body.trim()) return undefined as T;
+  try {
+    return JSON.parse(body) as T;
+  } catch {
+    throw new ApiError(
+      res.status,
+      "INVALID_RESPONSE",
+      "Máy chủ trả về dữ liệu không hợp lệ. Vui lòng tải lại trang.",
+    );
+  }
 }
 export function send<T>(path: string, method: string, data?: unknown) {
   return api<T>(path, {

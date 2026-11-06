@@ -452,7 +452,7 @@ export default function ResourcePage() {
     if (!deleting) return;
     try {
       await send(`/admin/${resource}/${deleting.id}`, "DELETE");
-      toast.success("Đã ẩn hoặc xóa dữ liệu");
+      toast.success("Đã xóa vĩnh viễn dữ liệu");
       setDeleting(null);
       refresh();
     } catch (e) {
@@ -662,7 +662,7 @@ export default function ResourcePage() {
                         {canDelete && (
                           <button
                             className="icon-btn small"
-                            aria-label={"Ẩn hoặc xóa " + row.id}
+                            aria-label={"Xóa vĩnh viễn " + row.id}
                             onClick={() => setDeleting(row)}
                           >
                             <Trash2 size={15} />
@@ -743,8 +743,8 @@ export default function ResourcePage() {
         onOpenChange={(v) => {
           if (!v) setDeleting(null);
         }}
-        title="Xác nhận ẩn hoặc xóa dữ liệu"
-        description="Phim, tập, gói và danh mục được ẩn. Mùa phim chỉ xóa được khi không còn dữ liệu liên kết."
+        title="Xác nhận xóa vĩnh viễn"
+        description="Bản ghi và dữ liệu phụ thuộc sẽ bị xóa khỏi web và CSDL, không thể khôi phục từ giao diện. Dữ liệu có lịch sử đặt vé, thanh toán hoặc liên kết bắt buộc sẽ bị chặn và có thông báo cụ thể."
       >
         <p>{String(deleting?.title ?? deleting?.name ?? deleting?.id ?? "")}</p>
         <div className="form-actions">

@@ -65,7 +65,10 @@ public class CatalogService {
                                         .replace("\\", "\\\\")
                                         .replace("%", "\\%")
                                         .replace("_", "\\_");
-                        p.add(cb.or(cb.like(root.get("searchText"), "%" + text + "%", '\\'),cb.equal(root.get("slug"),q.get("q").strip())));
+                        p.add(
+                                cb.or(
+                                        cb.like(root.get("searchText"), "%" + text + "%", '\\'),
+                                        cb.equal(root.get("slug"), q.get("q").strip())));
                     }
                     if (has(q, "type")) p.add(cb.equal(root.get("type"), q.get("type")));
                     if (has(q, "screening")) {
@@ -251,7 +254,38 @@ public class CatalogService {
     @Transactional
     public void delete(Long id, Long actor) {
         Movie m = movies.findById(id).orElseThrow(ApiException::missing);
-        m.deleted = true;
+        var showtimes =
+                db.queryForList(
+                        "select id from showtimes where movie_id=? order by id for update",
+                        Long.class,
+                        id);
+        for (Long showtime : showtimes) {
+            if (db.queryForObject(
+                            "select count(*) from bookings where showtime_id=?",
+                            Long.class,
+                            showtime)
+                    > 0)
+                throw ApiException.bad(
+                        "Không thể xóa phim đã có lịch sử đặt vé. Hãy chuyển phim về Nháp để ngừng"
+                            + " hiển thị.");
+        }
+        db.update("delete from showtimes where movie_id=?", id);
+        db.update(
+                "delete from comment_reports where review_id in (select id from reviews where"
+                    + " movie_id=?)",
+                id);
+        db.update("delete from reviews where movie_id=?", id);
+        db.update("delete from favorites where movie_id=?", id);
+        db.update("delete from watch_history where movie_id=?", id);
+        db.update("delete from movie_views where movie_id=?", id);
+        db.update("delete from banners where movie_id=?", id);
+        db.update(
+                "delete from episodes where season_id in (select id from seasons where movie_id=?)",
+                id);
+        db.update("delete from seasons where movie_id=?", id);
+        db.update("delete from movie_genres where movie_id=?", id);
+        movies.delete(m);
+        movies.flush();
         audit.log(actor, "MOVIE_DELETE", "MOVIE", id, m.title);
     }
 

@@ -420,17 +420,55 @@ public class AdminService {
     }
 
     public void delete(String resource, Long id, Long actor) {
+        String table =
+                switch (resource) {
+                    case "genres", "countries", "episodes", "seasons", "banners" -> resource;
+                    case "subscription-plans" -> "subscription_plans";
+                    default -> throw ApiException.forbidden();
+                };
+        if (db.queryForList("select id from " + table + " where id=? for update", Long.class, id)
+                .isEmpty()) throw ApiException.missing();
         switch (resource) {
-            case "genres", "countries" ->
-                    db.update("update " + resource + " set active=false where id=?", id);
-            case "subscription-plans" ->
-                    db.update("update subscription_plans set active=false where id=?", id);
-            case "episodes" -> db.update("update episodes set published=false where id=?", id);
-            case "seasons" -> db.update("delete from seasons where id=?", id);
+            case "genres" -> {
+                db.update("delete from movie_genres where genre_id=?", id);
+                db.update("delete from genres where id=?", id);
+            }
+            case "countries" -> {
+                if (db.queryForObject(
+                                "select count(*) from movies where country_id=?", Long.class, id)
+                        > 0)
+                    throw ApiException.bad(
+                            "Quốc gia đang được phim sử dụng. Hãy đổi quốc gia của các phim liên"
+                                    + " quan trước khi xóa.");
+                db.update("delete from countries where id=?", id);
+            }
+            case "subscription-plans" -> {
+                if (db.queryForObject(
+                                "select count(*) from payment_orders where plan_id=?",
+                                Long.class,
+                                id)
+                        > 0)
+                    throw ApiException.bad(
+                            "Không thể xóa gói đã có lịch sử thanh toán. Hãy bỏ chọn Hoạt động để"
+                                    + " ngừng sử dụng.");
+                db.update("delete from subscription_plans where id=?", id);
+            }
+            case "episodes" -> {
+                db.update("delete from watch_history where episode_id=?", id);
+                db.update("delete from episodes where id=?", id);
+            }
+            case "seasons" -> {
+                db.update(
+                        "delete from watch_history where episode_id in (select id from episodes"
+                                + " where season_id=?)",
+                        id);
+                db.update("delete from episodes where season_id=?", id);
+                db.update("delete from seasons where id=?", id);
+            }
             case "banners" -> db.update("delete from banners where id=?", id);
             default -> throw ApiException.forbidden();
         }
-        audit.log(actor, "RESOURCE_DELETE", resource, id, "Ẩn hoặc xóa theo ràng buộc dữ liệu");
+        audit.log(actor, "RESOURCE_DELETE", resource, id, "Xóa vĩnh viễn");
     }
 
     public record UserAction(

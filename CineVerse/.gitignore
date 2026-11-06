@@ -15,3 +15,7 @@ demo-media/*.mp4
 uploads/
 *.log
 *.pid
+NopBai/
+*.tsbuildinfo
+__pycache__/
+*.pyc

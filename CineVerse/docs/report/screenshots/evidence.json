@@ -1,0 +1,82 @@
+[
+  {
+    "name": "01-home",
+    "url": "http://localhost:5173/",
+    "capturedAt": "2026-11-06T01:11:29.098Z"
+  },
+  {
+    "name": "02-discover",
+    "url": "http://localhost:5173/kham-pha",
+    "capturedAt": "2026-11-06T01:11:29.800Z"
+  },
+  {
+    "name": "03-detail",
+    "url": "http://localhost:5173/phim/phia-ben-kia-chan-troi",
+    "capturedAt": "2026-11-06T01:11:30.894Z"
+  },
+  {
+    "name": "04-cinemas",
+    "url": "http://localhost:5173/rap-chieu",
+    "capturedAt": "2026-11-06T01:11:31.475Z"
+  },
+  {
+    "name": "05-register",
+    "url": "http://localhost:5173/dang-ky",
+    "capturedAt": "2026-11-06T01:11:32.100Z"
+  },
+  {
+    "name": "07-account",
+    "url": "http://localhost:5173/tai-khoan",
+    "capturedAt": "2026-11-06T01:11:34.068Z"
+  },
+  {
+    "name": "08-tickets",
+    "url": "http://localhost:5173/ve-cua-toi",
+    "capturedAt": "2026-11-06T01:11:35.021Z"
+  },
+  {
+    "name": "09-seats",
+    "url": "http://localhost:5173/dat-ve/8?showtime=40",
+    "capturedAt": "2026-11-06T01:11:35.520Z"
+  },
+  {
+    "name": "10-checkout",
+    "url": "http://localhost:5173/dat-ve/thanh-toan/CVB-a9b1615a-be89-413b-b7b5-af64ca47044b",
+    "capturedAt": "2026-11-06T01:11:36.524Z"
+  },
+  {
+    "name": "11-dashboard",
+    "url": "http://localhost:5174/admin",
+    "capturedAt": "2026-11-06T01:11:38.120Z"
+  },
+  {
+    "name": "12-movies",
+    "url": "http://localhost:5174/admin/movies",
+    "capturedAt": "2026-11-06T01:11:39.034Z"
+  },
+  {
+    "name": "13-showtimes",
+    "url": "http://localhost:5174/admin/showtimes",
+    "capturedAt": "2026-11-06T01:11:39.985Z"
+  },
+  {
+    "name": "14-cinemas",
+    "url": "http://localhost:5174/admin/cinemas",
+    "capturedAt": "2026-11-06T01:11:40.952Z"
+  },
+  {
+    "name": "15-payments",
+    "url": "http://localhost:5174/admin/payments",
+    "capturedAt": "2026-11-06T01:11:41.909Z"
+  },
+  {
+    "name": "16-checkin",
+    "url": "http://localhost:5174/admin/check-in",
+    "capturedAt": "2026-11-06T01:11:42.345Z"
+  },
+  {
+    "name": "17-audit",
+    "url": "http://localhost:5174/admin/audit-logs",
+    "capturedAt": "2026-11-06T01:11:43.261Z"
+  }
+]

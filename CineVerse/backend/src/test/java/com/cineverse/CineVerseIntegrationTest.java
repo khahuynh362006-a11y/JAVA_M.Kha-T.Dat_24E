@@ -1027,6 +1027,87 @@ class CineVerseIntegrationTest {
     }
 
     @Test
+    void permanentCinemaDeleteRemovesRoomsSeatsAndUnusedShowtimes() {
+        Long actor = administrator().id;
+        Long cinema =
+                cinemaAdmin.cinema(
+                        null,
+                        new com.cineverse.booking.CinemaAdminService.CinemaInput(
+                                "Rạp xóa", "TP.HCM", "Địa chỉ", true),
+                        actor);
+        Long room =
+                cinemaAdmin.room(
+                        null,
+                        new com.cineverse.booking.CinemaAdminService.RoomInput(
+                                cinema, "Phòng xóa", "2D", 3, 4, true),
+                        actor);
+        Long showtime =
+                cinemaAdmin.showtime(
+                        null,
+                        new com.cineverse.booking.CinemaAdminService.ShowtimeInput(
+                                1L, room, Instant.now().plusSeconds(86400), 100000L, true),
+                        actor);
+        cinemaAdmin.delete("cinemas", cinema, actor);
+        assertEquals(
+                0L,
+                db.queryForObject("select count(*) from cinemas where id=?", Long.class, cinema));
+        assertEquals(
+                0L,
+                db.queryForObject("select count(*) from auditoriums where id=?", Long.class, room));
+        assertEquals(
+                0L,
+                db.queryForObject(
+                        "select count(*) from seats where auditorium_id=?", Long.class, room));
+        assertEquals(
+                0L,
+                db.queryForObject(
+                        "select count(*) from showtimes where id=?", Long.class, showtime));
+    }
+
+    @Test
+    void permanentDeleteKeepsBookingHistoryAndDoesNotPartiallyDelete() {
+        var booking = holdSeats(1);
+        bookings.cancel(free().id, booking.id());
+        Long actor = administrator().id;
+        Long cinema =
+                db.queryForObject(
+                        "select a.cinema_id from showtimes s join auditoriums a on"
+                            + " a.id=s.auditorium_id where s.id=?",
+                        Long.class,
+                        booking.showtime().id());
+        Long movie =
+                db.queryForObject(
+                        "select movie_id from showtimes where id=?",
+                        Long.class,
+                        booking.showtime().id());
+        assertThrows(ApiException.class, () -> cinemaAdmin.delete("cinemas", cinema, actor));
+        assertThrows(ApiException.class, () -> catalog.delete(movie, actor));
+        assertEquals(
+                1L,
+                db.queryForObject("select count(*) from cinemas where id=?", Long.class, cinema));
+        assertEquals(
+                1L, db.queryForObject("select count(*) from movies where id=?", Long.class, movie));
+        assertEquals(
+                1L,
+                db.queryForObject(
+                        "select count(*) from bookings where id=?", Long.class, booking.id()));
+    }
+
+    @Test
+    void permanentCategoryDeleteUnlinksGenresAndProtectsRequiredCountries() {
+        Long actor = administrator().id;
+        admin.delete("genres", 1L, actor);
+        assertEquals(0L, db.queryForObject("select count(*) from genres where id=1", Long.class));
+        assertEquals(
+                0L,
+                db.queryForObject(
+                        "select count(*) from movie_genres where genre_id=1", Long.class));
+        assertThrows(ApiException.class, () -> admin.delete("countries", 1L, actor));
+        assertEquals(
+                1L, db.queryForObject("select count(*) from countries where id=1", Long.class));
+    }
+
+    @Test
     void publicScheduleAndProtectedHolds() throws Exception {
         mvc.perform(get("/api/v1/cinemas")).andExpect(status().isOk());
         mvc.perform(get("/api/v1/showtimes")).andExpect(status().isOk());
@@ -1062,7 +1143,7 @@ class CineVerseIntegrationTest {
     }
 
     @Test
-    void catalogCreateUpdateSoftDeleteAudited() {
+    void catalogCreateAndPermanentDeleteAudited() {
         var input = catalog.edit(1L);
         var created =
                 new CatalogDtos.MovieInput(
@@ -1093,7 +1174,7 @@ class CineVerseIntegrationTest {
         var saved = catalog.save(null, created, administrator().id);
         assertEquals(0, catalog.list(Map.of("q", "kiem-thu"), false).totalElements());
         catalog.delete(saved.id(), administrator().id);
-        assertTrue(movies.findById(saved.id()).orElseThrow().deleted);
+        assertTrue(movies.findById(saved.id()).isEmpty());
         assertEquals(
                 2,
                 db.queryForObject(
